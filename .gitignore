@@ -3,3 +3,5 @@ datasets/
 **/train_VinDr_YOLOv8
 
 **/VinDr_YOLOv8
+
+**/.venv
