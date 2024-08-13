@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 188/188 [00:29<00:00,  6.40it/s]
+                   all       3000       2697      0.209      0.136     0.0814     0.0337
+    Aortic enlargement       3000        221     0.0769      0.425      0.086     0.0242
+           Atelectasis       3000         96     0.0921     0.0104    0.00954    0.00322
+         Calcification       3000        232          0          0    0.00493    0.00144
+          Cardiomegaly       3000        310      0.303        0.8      0.639      0.277
+     Clavicle fracture       3000          2          0          0          0          0
+         Consolidation       3000        126      0.173     0.0556      0.089     0.0342
+             Emphysema       3000          4      0.123       0.25      0.151      0.137
+           Enlarged PA       3000          9          0          0   0.000791   7.91e-05
+                   ILD       3000        316      0.229      0.152      0.114     0.0429
+          Infiltration       3000         79       0.13      0.241      0.114     0.0381
+          Lung Opacity       3000         95     0.0814     0.0526      0.032    0.00611
+           Lung cavity       3000         10          1          0    0.00501    0.00104
+             Lung cyst       3000          3          0          0          0          0
+     Mediastinal shift       3000         20      0.229        0.3      0.149     0.0407
+           Nodule/Mass       3000        286      0.238     0.0699     0.0589      0.019
+      Pleural effusion       3000        136       0.15      0.287      0.116     0.0337
+    Pleural thickening       3000        240     0.0623      0.025     0.0154    0.00426
+          Pneumothorax       3000         25      0.126       0.04     0.0421     0.0198
+    Pulmonary fibrosis       3000        358      0.154     0.0866     0.0477     0.0143
+          Rib fracture       3000         17          1          0          0          0
+          Other lesion       3000        112      0.213     0.0625     0.0339     0.0115
+
+
+Generating Visualizations for batch-1/1: 100%|██████████| 16/16 [00:04<00:00,  3.94it/s]
+Error Excepted: e

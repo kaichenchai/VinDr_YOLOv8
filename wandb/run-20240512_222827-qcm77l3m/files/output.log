@@ -1,0 +1,33 @@
+
+                 Class     Images  Instances      Box(P          R
+                   all        601        559      0.449     0.0183    0.00517    0.00167
+    Aortic enlargement        601         45    0.00488      0.133    0.00288   0.000747
+           Atelectasis        601         15          0          0          0          0
+         Calcification        601         44          0          0          0          0
+          Cardiomegaly        601         61     0.0796      0.197     0.0576     0.0166
+         Consolidation        601         27          1          0          0          0
+             Emphysema        601          2          1          0          0          0
+                   ILD        601         69          1          0     0.0289     0.0116
+          Infiltration        601         14          1          0    0.00103   0.000329
+          Lung Opacity        601         17          1          0          0          0
+           Lung cavity        601          4          0          0          0          0
+             Lung cyst        601          1          0          0          0          0
+     Mediastinal shift        601          4          0          0          0          0
+           Nodule/Mass        601         72          0          0          0          0
+      Pleural effusion        601         25          1          0          0          0
+    Pleural thickening        601         54          1          0   0.000299    0.00015
+          Pneumothorax        601          6          0          0          0          0
+    Pulmonary fibrosis        601         75          1          0    0.00238   0.000557
+          Other lesion        601         24          0          0          0          0
+
+
+
+
+
+
+
+
+
+
+Generating Visualizations for batch-1/1: 100%|█| 16/16 [00:21<00:00,  1.
+Error Excepted: e

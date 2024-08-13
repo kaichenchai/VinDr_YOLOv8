@@ -1,0 +1,311 @@
+New https://pypi.org/project/ultralytics/8.2.18 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.2.8 🚀 Python-3.12.3 torch-2.3.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+[34m[1mengine/trainer: [39m[22mtask=detect, mode=train, model=yolov8n.pt, data=model.yaml, epochs=2, time=None, patience=100, batch=16, imgsz=1024, save=True, save_period=-1, cache=False, device=[0], workers=8, project=VinDr_YOLOv8, name=TEST_YOLOv8_5000t600v_2e, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=VinDr_YOLOv8/TEST_YOLOv8_5000t600v_2e
+Overriding model.yaml nc=80 with nc=22
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1    755602  ultralytics.nn.modules.head.Detect           [22, [64, 128, 256]]
+Model summary: 225 layers, 3015138 parameters, 3015122 gradients
+Transferred 319/355 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Sub
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/12c57b0679d77f63009d79239f5cb1ba.png: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/1f1abf0df154e4d455bd3f93fa8ef1f0.png: 6 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/2461ca359068b06237e93aae140a25f3.png: 9 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/4376c4766028d6873001b6653c5b6a13.png: 6 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/730b58517ca8b274e1b66e87c723c003.png: 8 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/7705b3f3b2a3a2de67e579119f53466e.png: 13 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/8e3cbb3460e37bd5418cb4bc23c07af8.png: 11 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/a340f6b48cac7f561fd07809cb4bed96.png: 4 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/abef2c15f19cc4822c9aac666cafe144.png: 3 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/bdd0bebed953f69413213d387c9717e7.png: 11 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/c772fcde08c1e9cb49ab6c11b8fe6e42.png: 13 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/train/d3b82f17d58da80f02e2b0812606cee2.png: 12 duplicate labels removed
+[34m[1mtrain: [39m[22mNew cache created: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/labels/train.cache
+[34m[1mval: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subse
+[34m[1mval: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/00a2145de1886cb9eb88869c85d74080.png: 1 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/1e87b2befde0db02bf14e75e798e4269.png: 6 duplicate labels removed
+[34m[1mval: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/daac34be8b6ca54b0ab1be81733c0d34.png: 11 duplicate labels removed
+[34m[1mval: [39m[22mNew cache created: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/labels/val.cache
+Plotting labels to VinDr_YOLOv8/TEST_YOLOv8_5000t600v_2e/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000385, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 1024 train, 1024 val
+Using 8 dataloader workers
+Logging results to [1mVinDr_YOLOv8/TEST_YOLOv8_5000t600v_2e
+Starting training for 2 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1/2      6.62G      2.724      8.283      2.639         35
+                 Class     Images  Instances      Box(P          R
+                   all        600        559      0.612     0.0613    0.00199   0.000594
+Ultralytics YOLOv8.2.8 🚀 Python-3.12.3 torch-2.3.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 0 gradients
+Generating Visualizations for batch-1/1:   0%|   | 0/32 [00:00<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/80f3da71b6af9134388dee22f0d386d9.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   3%| | 1/32 [00:01<00:41,  1.3[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3c0da76eb43946a1f718198ef00bea1a.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:   9%| | 3/32 [00:04<00:50,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/9be029176ee67d946f67f6c737e748ca.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  12%|▏| 4/32 [00:06<00:48,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/20b35d7ea287071b586c37690162b556.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  16%|▏| 5/32 [00:08<00:44,  1.6[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/311301e3ac19b4b8eda85672e625b2e8.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  19%|▏| 6/32 [00:09<00:37,  1.4[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d7c8f7be70272a97de03db9f7a3cd6ca.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  22%|▏| 7/32 [00:10<00:33,  1.3[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/2a3e22dea097a54f357d2634ca9837a1.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  25%|▎| 8/32 [00:11<00:31,  1.3[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/07ee5d541dcbf1131f0b84aee73d7705.png has no bounding boxes labels
+
+
+
+
+Generating Visualizations for batch-1/1:  44%|▍| 14/32 [00:21<00:28,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/31043d30ee29726c185d655800f025ec.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  47%|▍| 15/32 [00:22<00:26,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/615be21de05d7049ddb1652520d7f528.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  50%|▌| 16/32 [00:23<00:22,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/fed370b0c413ea8bb9881636a6018ed2.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  53%|▌| 17/32 [00:25<00:21,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/eea860baa10cf65d1fabf38fad5c910e.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  56%|▌| 18/32 [00:26<00:20,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d13bf4a8562ff31f7795eb40efa41cc8.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  59%|▌| 19/32 [00:28<00:18,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/b8009ecfdc228cb909cbeae50c352d2e.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  66%|▋| 21/32 [00:30<00:14,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/7a4af4d5b559ac1a4f9dd849c0aec107.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  72%|▋| 23/32 [00:33<00:12,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/faf31cf12d432065854dc97944072e2a.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  78%|▊| 25/32 [00:36<00:11,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/cb322def72a6d1b8318ec954f5aba12a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  81%|▊| 26/32 [00:38<00:10,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/c9ded524aabc60309722651b535ab79a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  84%|▊| 27/32 [00:43<00:12,  2.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/c8fcdb8ff1a58c1c12d411271b003e3b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|▉| 28/32 [00:47<00:11,  2.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/c7dc213cee369cf740c0587509f53562.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  91%|▉| 29/32 [00:50<00:09,  3.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/c793051629f27947bcf1796ef849384c.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  94%|▉| 30/32 [00:53<00:06,  3.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/6547bec43838410978ebabe333495e7a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  97%|▉| 31/32 [00:57<00:03,  3.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/6490e2cf8ea994ef53c06c287d59085d.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|█| 32/32 [00:58<00:00,  1.
+Generating Visualizations for batch-1/1:   0%|   | 0/32 [00:00<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/60c667d029a8c9a394a64e83af944953.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   3%| | 1/32 [00:02<01:13,  2.3[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/6039745a7cf89b4f65da84eaa8c1a226.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:   9%| | 3/32 [00:05<00:51,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/ceae9de35f06cd72dd7125b340970536.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  12%|▏| 4/32 [00:07<00:47,  1.6[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/728b3cf755f42fd628ff5fee7bf338d5.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  16%|▏| 5/32 [00:08<00:43,  1.6[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/6e07fab2014be723250f7897ab6e3df2.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  19%|▏| 6/32 [00:10<00:45,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/6c6c4e6cb64f4291077af260d3f696d1.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  22%|▏| 7/32 [00:12<00:44,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/68ea2c78d412b314ebe9b7261173f274.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  28%|▎| 9/32 [00:16<00:41,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/378c5843d109c9f0bd82baa85b15dac8.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  31%|▎| 10/32 [00:18<00:40,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/a36217236c03b1daaa338c22cdbbab87.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  34%|▎| 11/32 [00:19<00:37,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/8b20c3eebf97ebe4a939ec16f1be2ccf.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  38%|▍| 12/32 [00:21<00:37,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/86f163288f42611c975cbc28990cadd3.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  41%|▍| 13/32 [00:23<00:36,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/df3879d47989e97da7ff2aa037b62a93.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  44%|▍| 14/32 [00:25<00:33,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/f84c417ac0bd5d1a874f1c4e788c6b77.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  50%|▌| 16/32 [00:29<00:28,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/282dc34d270eccc44a61901afbd4791d.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  53%|▌| 17/32 [00:30<00:27,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/4b81d215ee6e2cb1d59cd812475c0172.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  59%|▌| 19/32 [00:34<00:22,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/e51fb1d29627f9ed31e65a53048b7cd6.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  62%|▋| 20/32 [00:36<00:22,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/e4c50af34882d9a1c5631007c1d2e05d.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  66%|▋| 21/32 [00:38<00:21,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/e14840dd62dcaa3f2f429ed69a89059c.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  69%|▋| 22/32 [00:40<00:19,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/e06e6af1b1ae040355e80dc109d8406d.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  72%|▋| 23/32 [00:42<00:17,  2.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/2c779143ede5ab9248e40bd83d6b72bf.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  78%|▊| 25/32 [00:46<00:14,  2.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/4fba6d90e4c0141270b19446fbc97796.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  81%|▊| 26/32 [00:48<00:12,  2.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/4cd5e48c37b1e88e734e6e59dbf8bd6d.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|▉| 28/32 [00:52<00:07,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/475274f175ac0685d9ef2153e5d8e47a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  91%|▉| 29/32 [00:54<00:05,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/4378b6e8a912d95d9eadeff7b3b9a48e.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  94%|▉| 30/32 [00:56<00:03,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3f311e13697f83d41f55f079232fe7ee.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1: 100%|█| 32/32 [00:59<00:00,  1.
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        2/2       6.3G      2.329      5.645      2.351         24
+                 Class     Images  Instances      Box(P          R
+                   all        600        559      0.348     0.0201     0.0109    0.00462
+Generating Visualizations for batch-1/1:   0%|   | 0/32 [00:00<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3c4375177b66fa5e8914d22b1556dd48.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   3%| | 1/32 [00:01<00:48,  1.5[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/b9caeb519529294311110360f5c59a7c.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:   9%| | 3/32 [00:05<00:56,  1.9[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/9221b0d7c0029ef3ac6e12f5aa330fa6.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  12%|▏| 4/32 [00:08<01:00,  2.1[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/0c0b8e98262a662c362929aa60e6bed9.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  16%|▏| 5/32 [00:09<00:54,  2.0[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/fd16e07868605bc0136a2884be2742cb.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  22%|▏| 7/32 [00:13<00:43,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/950259de679bcbb923e69129ef6640d5.png has no bounding boxes labels
+
+
+Generating Visualizations for batch-1/1:  34%|▎| 11/32 [00:21<00:40,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d1d3e01540ce1a7823136b20e98719d9.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  41%|▍| 13/32 [00:24<00:35,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d2baf8c1bd359c4e7084134ab6fa92a9.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  44%|▍| 14/32 [00:26<00:34,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d32a4152c2e7b4d6e658ec58fbeea760.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  47%|▍| 15/32 [00:28<00:31,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/fcdd777de2f86604758044246dd7bebb.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  50%|▌| 16/32 [00:30<00:29,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/5424def929d8cb11e03df4a5c02df124.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  53%|▌| 17/32 [00:31<00:25,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/4fd4306bfaeb5322082642bee9ef3ff8.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  59%|▌| 19/32 [00:35<00:22,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/793aa89237cb495f1b83dcc5a1434934.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  62%|▋| 20/32 [00:37<00:21,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/a0e47101a18af84ab9cfc2d9669226cf.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  66%|▋| 21/32 [00:38<00:18,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/b2026d7a8878474b33490ccc9ac1d0b8.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  69%|▋| 22/32 [00:40<00:16,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/7788cdc2fe03ff147991981c80af67f6.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  72%|▋| 23/32 [00:42<00:15,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/773144bbf1ced7a17fb84cdcbf7e6504.png has no bounding boxes labels
+
+
+
+
+
+Generating Visualizations for batch-1/1:  91%|▉| 29/32 [00:53<00:05,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/8673c57e2f920c8bb15d3c8a062ee2a2.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  94%|▉| 30/32 [00:55<00:03,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/43f2bfe06c7c0bed1ea56abd891c46c1.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  97%|▉| 31/32 [00:56<00:01,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/ae2c627a8cdf3ed34305217f530fad73.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|█| 32/32 [00:57<00:00,  1.
+Generating Visualizations for batch-1/1:   0%|   | 0/32 [00:00<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3457c18599e510d039aa44c4c3d56e3c.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   3%| | 1/32 [00:01<00:44,  1.4[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/0e36597f559be16b6304f3771082c82a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   6%| | 2/32 [00:03<00:53,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/cb111309371ea73ddf6cb912755ce5f7.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:   9%| | 3/32 [00:04<00:46,  1.6[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/0e4736c7f5fab2998a3ef0e51fe48953.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  12%|▏| 4/32 [00:06<00:50,  1.8[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/9c08285e9324c9e7efbfed86b5a93fd6.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  16%|▏| 5/32 [00:08<00:46,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/99e1fdb74b8c507753026cd4ee28465c.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  19%|▏| 6/32 [00:10<00:48,  1.8[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/57d8fda3ee850a41defcfd7e17673395.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  25%|▎| 8/32 [00:13<00:35,  1.4[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/17e37e29b02ef0f01a1e9e5e0c0e9d6e.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  28%|▎| 9/32 [00:15<00:42,  1.8[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/a2dbf5279ee801c86326bfbff7e451b5.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  38%|▍| 12/32 [00:20<00:33,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/187b41878d6dfc41488d4f1f379bbdc1.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  44%|▍| 14/32 [00:24<00:29,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/bfae73fca53a1656750ea6499bd98167.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  47%|▍| 15/32 [00:26<00:30,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/8bdba2010a4775f16a711feab58b8c1c.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  53%|▌| 17/32 [00:29<00:23,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/dad0ade8390ad4e53a98a69bf94ea288.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  59%|▌| 19/32 [00:31<00:19,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/019df578e38053e614d483f7fb347b26.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  62%|▋| 20/32 [00:33<00:19,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/880331cec567a33bdfa422b8cae7f77c.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  66%|▋| 21/32 [00:35<00:18,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/6fe65e41cb661237e9030f191e3a2a9b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  69%|▋| 22/32 [00:36<00:15,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/887371388c9802ebf6e18d617d1c9ead.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  72%|▋| 23/32 [00:38<00:13,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/945e911b21f8a7a61e1828b1b96e9b57.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  75%|▊| 24/32 [00:39<00:12,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/333feefeb39e5d2df1e5de640c82a9a4.png has no bounding boxes labels
+
+Generating Visualizations for batch-1/1:  84%|▊| 27/32 [00:44<00:07,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/c3f81b5f19dd0e3518026b662fad6ce9.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|▉| 28/32 [00:46<00:06,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/9a2a32405209c4c47fc684255f4a1d1f.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  91%|▉| 29/32 [00:47<00:04,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/ea61778151fddab8cb09907266663307.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  94%|▉| 30/32 [00:50<00:03,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3075e85dda12262bc9e34a5bd518d226.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|█| 32/32 [00:53<00:00,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/7902baf009b3169371fe1c3de95c3b99.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|█| 32/32 [00:53<00:00,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/7902baf009b3169371fe1c3de95c3b99.png has no bounding boxes labels
+2 epochs completed in 0.114 hours.
+Optimizer stripped from VinDr_YOLOv8/TEST_YOLOv8_5000t600v_2e/weights/last.pt, 6.3MB
+Optimizer stripped from VinDr_YOLOv8/TEST_YOLOv8_5000t600v_2e/weights/best.pt, 6.3MB
+Validating VinDr_YOLOv8/TEST_YOLOv8_5000t600v_2e/weights/best.pt...
+Ultralytics YOLOv8.2.8 🚀 Python-3.12.3 torch-2.3.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+Model summary (fused): 168 layers, 3009938 parameters, 0 gradients
+                 Class     Images  Instances      Box(P          R
+                   all        600        559      0.347     0.0201     0.0108    0.00462
+    Aortic enlargement        600         45     0.0538     0.0667     0.0153    0.00495
+           Atelectasis        600         15          0          0          0          0
+         Calcification        600         44          0          0          0          0
+          Cardiomegaly        600         61      0.199      0.295      0.153     0.0688
+         Consolidation        600         27          0          0          0          0
+             Emphysema        600          2          0          0          0          0
+                   ILD        600         69          1          0     0.0114     0.0045
+          Infiltration        600         14          1          0    0.00187   0.000848
+          Lung Opacity        600         17          1          0          0          0
+           Lung cavity        600          4          0          0          0          0
+             Lung cyst        600          1          0          0          0          0
+     Mediastinal shift        600          4          0          0          0          0
+           Nodule/Mass        600         72          0          0          0          0
+      Pleural effusion        600         25          1          0    0.00187   0.000933
+    Pleural thickening        600         54          1          0    0.00112   0.000163
+          Pneumothorax        600          6          0          0          0          0
+    Pulmonary fibrosis        600         75          1          0       0.01     0.0029
+          Other lesion        600         24          0          0          0          0
+Generating Visualizations for batch-1/1:   0%|   | 0/32 [00:00<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3097b40e5fe9ed1c66ef81dd98ecefec.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   6%| | 2/32 [00:03<00:43,  1.4[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/a3395fc2c4716272d137ce664e7f0a4b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   9%| | 3/32 [00:04<00:38,  1.3[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/dc697df7ec030fa4520e37d6ccb4b801.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  12%|▏| 4/32 [00:05<00:34,  1.2[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/c642210a54ca331c2a1bdcf6fbb7eac7.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  16%|▏| 5/32 [00:07<00:42,  1.5
+Generating Visualizations for batch-1/1:  12%|▏| 4/32 [00:05<00:34,  1.2[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/c642210a54ca331c2a1bdcf6fbb7eac7.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  22%|▏| 7/32 [00:10<00:40,  1.6[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/c642210a54ca331c2a1bdcf6fbb7eac7.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  22%|▏| 7/32 [00:10<00:40,  1.6[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/a9bdb1569185a68c00c7e1df3a5c7a7a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  28%|▎| 9/32 [00:14<00:39,  1.7[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/a9bdb1569185a68c00c7e1df3a5c7a7a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  31%|▎| 10/32 [00:16<00:39,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/a9bdb1569185a68c00c7e1df3a5c7a7a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  34%|▎| 11/32 [00:17<00:36,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3401e0a653e4b1489ce0d770c0f3748b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  34%|▎| 11/32 [00:17<00:36,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3401e0a653e4b1489ce0d770c0f3748b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  34%|▎| 11/32 [00:17<00:36,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3401e0a653e4b1489ce0d770c0f3748b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  34%|▎| 11/32 [00:17<00:36,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3401e0a653e4b1489ce0d770c0f3748b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  34%|▎| 11/32 [00:17<00:36,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3401e0a653e4b1489ce0d770c0f3748b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  34%|▎| 11/32 [00:17<00:36,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3401e0a653e4b1489ce0d770c0f3748b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  56%|▌| 18/32 [00:30<00:27,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/3401e0a653e4b1489ce0d770c0f3748b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  56%|▌| 18/32 [00:30<00:27,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/474007ded9b6b99e3619a705ef34d0dc.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  56%|▌| 18/32 [00:30<00:27,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/474007ded9b6b99e3619a705ef34d0dc.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  56%|▌| 18/32 [00:30<00:27,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/474007ded9b6b99e3619a705ef34d0dc.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  72%|▋| 23/32 [00:38<00:13,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/474007ded9b6b99e3619a705ef34d0dc.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  75%|▊| 24/32 [00:40<00:12,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/474007ded9b6b99e3619a705ef34d0dc.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  75%|▊| 24/32 [00:40<00:12,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/5797ed009ccc4840c86e430aa66f3e8e.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  81%|▊| 26/32 [00:44<00:10,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/5797ed009ccc4840c86e430aa66f3e8e.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  81%|▊| 26/32 [00:44<00:10,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/650b995364f405a9341f39f50126ffcf.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|▉| 28/32 [00:47<00:06,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/650b995364f405a9341f39f50126ffcf.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|▉| 28/32 [00:47<00:06,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d12e6816fa4914c7720aea3bf6f8d701.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  97%|▉| 31/32 [00:52<00:01,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d12e6816fa4914c7720aea3bf6f8d701.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  97%|▉| 31/32 [00:52<00:01,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d12e6816fa4914c7720aea3bf6f8d701.png has no bounding boxes labels
+Speed: 0.3ms preprocess, 2.2ms inference, 0.0ms loss, 1.8ms postprocess per image
+Generating Visualizations for batch-1/1: 100%|█| 32/32 [00:53<00:00,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d12e6816fa4914c7720aea3bf6f8d701.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|█| 32/32 [00:53<00:00,  1.[34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8/datasets/UPDATED_5000_600_Subset/images/val/d12e6816fa4914c7720aea3bf6f8d701.png has no bounding boxes labels

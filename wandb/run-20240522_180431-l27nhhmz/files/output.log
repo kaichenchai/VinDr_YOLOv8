@@ -1,0 +1,36 @@
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 38/38 [00:08<00:00,  4.30it/s]
+                   all        600        559      0.197      0.179      0.106     0.0536
+    Aortic enlargement        600         45     0.0563      0.422     0.0632     0.0209
+           Atelectasis        600         15          0          0    0.00362   0.000592
+         Calcification        600         44          1          0    0.00588    0.00189
+          Cardiomegaly        600         61      0.209       0.82      0.502      0.193
+         Consolidation        600         27      0.231     0.0675     0.0402     0.0141
+             Emphysema        600          2      0.278          1      0.828      0.596
+                   ILD        600         69      0.165      0.217      0.103     0.0319
+          Infiltration        600         14     0.0294      0.143     0.0322     0.0148
+          Lung Opacity        600         17          0          0      0.001   0.000118
+           Lung cavity        600          4          0          0          0          0
+             Lung cyst        600          1          0          0          0          0
+     Mediastinal shift        600          4     0.0226       0.25      0.136     0.0302
+           Nodule/Mass        600         72       0.22     0.0278     0.0155    0.00367
+      Pleural effusion        600         25      0.202        0.2      0.129     0.0444
+    Pleural thickening        600         54     0.0389    0.00793     0.0122    0.00265
+          Pneumothorax        600          6          1          0          0          0
+    Pulmonary fibrosis        600         75      0.096     0.0667     0.0376    0.00901
+          Other lesion        600         24          0          0    0.00394     0.0012
+
+
+
+
+
+
+
+
+
+
+Generating Visualizations for batch-1/1: 100%|██████████| 16/16 [00:21<00:00,  1.37s/it]
+Error Excepted: e

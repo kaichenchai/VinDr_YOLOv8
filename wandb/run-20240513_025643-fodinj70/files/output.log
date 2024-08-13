@@ -1,0 +1,37 @@
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 38/38 [00:04<00:00,  9.12it/s]
+                   all        601        559      0.284      0.137      0.115     0.0603
+    Aortic enlargement        601         45     0.0501      0.111     0.0666     0.0241
+           Atelectasis        601         15          0          0    0.00187   0.000562
+         Calcification        601         44          0          0    0.00817     0.0036
+          Cardiomegaly        601         61      0.446      0.492      0.399      0.159
+         Consolidation        601         27      0.482      0.037     0.0629     0.0176
+             Emphysema        601          2      0.945          1      0.995      0.746
+                   ILD        601         69      0.293      0.101     0.0774     0.0251
+          Infiltration        601         14      0.083     0.0714     0.0185    0.00581
+          Lung Opacity        601         17          0          0   0.000683   9.41e-05
+           Lung cavity        601          4          1          0          0          0
+             Lung cyst        601          1          1          0          0          0
+     Mediastinal shift        601          4      0.481        0.5      0.332      0.074
+           Nodule/Mass        601         72          0          0     0.0023   0.000905
+      Pleural effusion        601         25      0.189       0.12      0.075     0.0217
+    Pleural thickening        601         54          0          0      0.008    0.00185
+          Pneumothorax        601          6          0          0          0          0
+    Pulmonary fibrosis        601         75      0.137       0.04     0.0194      0.005
+          Other lesion        601         24          0          0   0.000965   0.000201
+
+
+
+
+
+
+
+
+
+
+
+Generating Visualizations for batch-1/1:  94%|█████████▍| 15/16 [00:21<00:01,  1.73s/it]
+
+Generating Visualizations for batch-1/1: 100%|██████████| 16/16 [00:22<00:00,  1.42s/it]
