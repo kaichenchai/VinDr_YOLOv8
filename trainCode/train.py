@@ -3,10 +3,10 @@ from wandb.integration.ultralytics import add_wandb_callback
 import wandb
 
 # Step 1: Initialize a Weights & Biases run
-wandb.init(project="VinDr_YOLOv8", job_type="training", name = "310724_YOLOv8s_FULL_brightnessEQ",
+wandb.init(project="VinDr_YOLOv8", job_type="training", name = "200824_YOLOv8s_brightnessEQ_FIXED_FIXEDBB",
 config={
     "epochs": 50,
-    "dataset": "FULL_PAD_brightnessEQ_VinDr",
+    "dataset": "FULL_brightnessEQ_VinDr_FIXED",
     "model": "YOLOv8s",
     "image_size": 1024,
     "batch_size": 16,
@@ -24,7 +24,7 @@ add_wandb_callback(model, enable_model_checkpointing=True)
 # Step 4: Train and Fine-Tune the Model
 model.train(project = "train_VinDr_YOLOv8",
             data = dataset_name,
-            name = "310724_YOLOv8s_FULL_brightnessEQ",
+            name = "200824_YOLOv8s_brightnessEQ_FIXED_FIXEDBB",
             batch = 16,
             epochs = 50,
             imgsz = 1024,
@@ -33,7 +33,7 @@ model.train(project = "train_VinDr_YOLOv8",
 
 # Step 5: Validate the Model
 try:
-  model.val()
+  model.val(data = dataset_name)
 except AssertionError as e:
   print(f"Error Excepted: {e}")
 
