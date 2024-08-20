@@ -1,4 +1,4 @@
-path: /mnt/data/kai/VinDr_YOLOv8/datasets/FULL_1024_PAD_brightnessEQ
+path: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED
 train: images/train
 val: images/val
 
