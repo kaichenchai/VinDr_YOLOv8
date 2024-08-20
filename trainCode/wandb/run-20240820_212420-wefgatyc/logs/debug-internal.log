@@ -1,0 +1,232 @@
+2024-08-20 21:24:20,386 INFO    StreamThr :416897 [internal.py:wandb_internal():86] W&B internal server running at pid: 416897, started at: 2024-08-20 21:24:20.385223
+2024-08-20 21:24:20,389 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status
+2024-08-20 21:24:20,392 INFO    WriterThread:416897 [datastore.py:open_for_write():87] open: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/run-wefgatyc.wandb
+2024-08-20 21:24:20,393 DEBUG   SenderThread:416897 [sender.py:send():379] send: header
+2024-08-20 21:24:20,397 DEBUG   SenderThread:416897 [sender.py:send():379] send: run
+2024-08-20 21:24:21,074 INFO    SenderThread:416897 [dir_watcher.py:__init__():211] watching files in: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files
+2024-08-20 21:24:21,075 INFO    SenderThread:416897 [sender.py:_start_run_threads():1124] run started: wefgatyc with start time 1724160260.384152
+2024-08-20 21:24:21,083 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: check_version
+2024-08-20 21:24:21,083 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: check_version
+2024-08-20 21:24:21,130 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: run_start
+2024-08-20 21:24:21,145 DEBUG   HandlerThread:416897 [system_info.py:__init__():26] System info init
+2024-08-20 21:24:21,145 DEBUG   HandlerThread:416897 [system_info.py:__init__():41] System info init done
+2024-08-20 21:24:21,145 INFO    HandlerThread:416897 [system_monitor.py:start():194] Starting system monitor
+2024-08-20 21:24:21,146 INFO    SystemMonitor:416897 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-20 21:24:21,146 INFO    HandlerThread:416897 [system_monitor.py:probe():214] Collecting system info
+2024-08-20 21:24:21,147 INFO    SystemMonitor:416897 [interfaces.py:start():190] Started cpu monitoring
+2024-08-20 21:24:21,147 INFO    SystemMonitor:416897 [interfaces.py:start():190] Started disk monitoring
+2024-08-20 21:24:21,148 INFO    SystemMonitor:416897 [interfaces.py:start():190] Started gpu monitoring
+2024-08-20 21:24:21,149 INFO    SystemMonitor:416897 [interfaces.py:start():190] Started memory monitoring
+2024-08-20 21:24:21,150 INFO    SystemMonitor:416897 [interfaces.py:start():190] Started network monitoring
+2024-08-20 21:24:21,165 DEBUG   HandlerThread:416897 [system_info.py:probe():150] Probing system
+2024-08-20 21:24:21,167 DEBUG   HandlerThread:416897 [system_info.py:_probe_git():135] Probing git
+2024-08-20 21:24:21,172 DEBUG   HandlerThread:416897 [system_info.py:_probe_git():143] Probing git done
+2024-08-20 21:24:21,172 DEBUG   HandlerThread:416897 [system_info.py:probe():198] Probing system done
+2024-08-20 21:24:21,172 DEBUG   HandlerThread:416897 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-28-generic-x86_64-with-glibc2.35', 'python': '3.12.3', 'heartbeatAt': '2024-08-20T13:24:21.165878', 'startedAt': '2024-08-20T13:24:20.378513', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/train.py', 'codePathLocal': 'train.py', 'codePath': 'trainCode/train.py', 'git': {'remote': 'https://github.com/kaichenchai/VinDr_YOLOv8/', 'commit': '1863cde41279f99965dac8114dcda2b80c9d4b33'}, 'email': 'englishorc65@gmail.com', 'root': '/mnt/data/kai/VinDr_YOLOv8_experiments', 'host': 'thermaltake', 'username': 'kai', 'executable': '/home/kai/miniconda3/envs/vindr/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1805.8056999999997, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 3011.441, 'min': 1200.0, 'max': 4100.0}, {'current': 1353.69, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4200.0}, {'current': 1546.489, 'min': 1200.0, 'max': 4100.0}, {'current': 2202.28, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3999.984, 'min': 1200.0, 'max': 4200.0}, {'current': 3042.359, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 2037.329, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3302.564, 'min': 1200.0, 'max': 4100.0}, {'current': 1208.734, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4200.0}], 'disk': {'/': {'total': 3753.976058959961, 'used': 313.57574462890625}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 62.46904754638672}}
+2024-08-20 21:24:21,172 INFO    HandlerThread:416897 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-20 21:24:21,172 INFO    HandlerThread:416897 [system_monitor.py:probe():227] Publishing system info
+2024-08-20 21:24:21,172 DEBUG   HandlerThread:416897 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-08-20 21:24:22,076 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/conda-environment.yaml
+2024-08-20 21:24:22,941 DEBUG   HandlerThread:416897 [system_info.py:_save_conda():222] Saving conda packages done
+2024-08-20 21:24:22,942 INFO    HandlerThread:416897 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-20 21:24:22,946 DEBUG   SenderThread:416897 [sender.py:send():379] send: files
+2024-08-20 21:24:22,946 INFO    SenderThread:416897 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-08-20 21:24:22,989 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: python_packages
+2024-08-20 21:24:22,990 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: python_packages
+2024-08-20 21:24:22,992 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:24:22,993 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:24:22,994 DEBUG   SenderThread:416897 [sender.py:send():379] send: telemetry
+2024-08-20 21:24:22,994 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:24:23,074 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/conda-environment.yaml
+2024-08-20 21:24:23,075 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/wandb-metadata.json
+2024-08-20 21:24:23,075 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/requirements.txt
+2024-08-20 21:24:23,952 INFO    wandb-upload_0:416897 [upload_job.py:push():131] Uploaded file /tmp/tmpxxh7g2xowandb/mla5ykj4-wandb-metadata.json
+2024-08-20 21:24:24,075 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:25,450 DEBUG   SenderThread:416897 [sender.py:send():379] send: telemetry
+2024-08-20 21:24:25,450 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:24:26,076 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:28,077 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:30,078 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:30,943 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:24:32,079 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:34,080 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:36,039 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:24:36,080 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:37,990 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:24:37,991 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:24:37,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:24:38,081 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:40,082 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:41,483 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:24:42,083 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:44,084 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:46,085 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:46,523 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:24:48,086 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:50,087 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:51,728 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:24:52,088 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:52,088 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/config.yaml
+2024-08-20 21:24:52,990 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:24:52,991 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:24:52,993 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:24:54,089 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:56,090 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:24:57,092 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:24:58,091 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:00,091 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:02,092 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:02,500 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:04,093 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:06,094 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:07,744 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:07,990 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:25:07,991 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:25:07,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:25:08,095 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:10,096 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:12,097 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:13,264 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:14,098 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:16,099 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:18,099 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:18,428 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:20,100 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:21,151 DEBUG   SystemMonitor:416897 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-20 21:25:21,153 DEBUG   SenderThread:416897 [sender.py:send():379] send: stats
+2024-08-20 21:25:22,101 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:22,991 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:25:22,991 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:25:22,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:25:23,556 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:24,102 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:26,103 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:28,104 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:28,569 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:30,105 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:32,106 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:34,016 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:34,108 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:36,110 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:37,991 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:25:37,991 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:25:37,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:25:38,111 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:39,297 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:40,112 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:42,113 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:44,114 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:44,791 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:46,115 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:48,115 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:49,935 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:50,116 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:51,156 DEBUG   SenderThread:416897 [sender.py:send():379] send: stats
+2024-08-20 21:25:52,117 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:52,991 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:25:52,992 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:25:52,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:25:54,118 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:55,549 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:25:56,119 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:25:58,120 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:00,121 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:01,288 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:02,122 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:04,123 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:06,124 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:06,344 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:07,991 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:26:07,992 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:26:07,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:26:08,125 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:10,125 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:11,759 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:12,126 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:14,127 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:16,128 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:17,011 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:18,129 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:20,130 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:21,362 DEBUG   SenderThread:416897 [sender.py:send():379] send: stats
+2024-08-20 21:26:22,094 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:22,131 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:22,991 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:26:22,991 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:26:22,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:26:24,131 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:26,132 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:27,216 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:28,133 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:30,134 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:32,135 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:32,364 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:34,136 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:36,137 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:37,382 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:37,991 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:26:37,992 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:26:37,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:26:38,138 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:40,139 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:42,140 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:42,617 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:44,140 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:46,141 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:47,787 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:48,142 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:50,143 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:51,159 DEBUG   SenderThread:416897 [sender.py:send():379] send: stats
+2024-08-20 21:26:52,144 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:52,991 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:26:52,992 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:26:52,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:26:53,262 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:26:54,145 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:56,146 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:58,147 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:26:58,423 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:00,147 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:02,148 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:03,503 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:04,149 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:06,150 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:07,992 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:27:07,993 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:27:07,995 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:27:08,150 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:08,722 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:10,151 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:12,152 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:13,728 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:14,153 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:16,154 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:18,155 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:19,275 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:20,155 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:21,160 DEBUG   SenderThread:416897 [sender.py:send():379] send: stats
+2024-08-20 21:27:22,156 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:22,992 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:27:22,993 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:27:22,995 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:27:24,157 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:24,565 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:26,161 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:28,164 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:30,084 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:30,169 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:32,311 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:34,508 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:35,161 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:36,488 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:37,994 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: stop_status
+2024-08-20 21:27:37,995 DEBUG   SenderThread:416897 [sender.py:send_request():406] send_request: stop_status
+2024-08-20 21:27:37,998 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: internal_messages
+2024-08-20 21:27:38,489 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:39,383 INFO    memory    :416897 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-08-20 21:27:39,384 DEBUG   SystemMonitor:416897 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-20 21:27:39,384 DEBUG   SystemMonitor:416897 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-20 21:27:39,387 DEBUG   SenderThread:416897 [sender.py:send():379] send: stats
+2024-08-20 21:27:40,389 DEBUG   HandlerThread:416897 [handler.py:handle_request():146] handle_request: status_report
+2024-08-20 21:27:40,490 INFO    Thread-12 :416897 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240820_212420-wefgatyc/files/output.log
+2024-08-20 21:27:41,423 INFO    MainThread:416897 [internal.py:handle_exit():76] Internal process exited
