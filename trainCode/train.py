@@ -10,7 +10,7 @@ config={
     "model": "YOLOv8s",
     "image_size": 1024,
     "batch_size": 16,
-    "machine": "Thermaltake_2080ti_1"
+    "machine": "Thermaltake_2080ti_0"
 }
 )
 # Step 2: Define the YOLOv8 Model and Dataset
@@ -29,7 +29,7 @@ model.train(project = "train_VinDr_YOLOv8",
             epochs = 50,
             imgsz = 1024,
             plots = True,
-            device=[1])
+            device=[0])
 
 # Step 5: Validate the Model
 try:

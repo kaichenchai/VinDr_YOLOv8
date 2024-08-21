@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/train.py", line 32, in <module>
+    device=[o])
+            ^
+NameError: name 'o' is not defined
