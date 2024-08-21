@@ -1,0 +1,60 @@
+Ultralytics YOLOv8.2.8 🚀 Python-3.12.3 torch-2.3.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+Model summary (fused): 168 layers, 11134098 parameters, 0 gradients
+[34m[1mval: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val.cache... 949 images, 2051 backgrounds, 0 corrupt: 100%|██████████| 3000/3000 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 188/188 [00:32<00:00,  5.80it/s]
+                   all       3000       2697      0.288      0.198      0.119     0.0431
+    Aortic enlargement       3000        221      0.126      0.439      0.146     0.0458
+           Atelectasis       3000         96     0.0662     0.0312     0.0246    0.00843
+         Calcification       3000        232      0.243      0.103      0.093     0.0282
+          Cardiomegaly       3000        310      0.397      0.806      0.672       0.29
+     Clavicle fracture       3000          2          1          0          0          0
+         Consolidation       3000        126      0.284      0.262      0.159      0.058
+             Emphysema       3000          4     0.0607       0.25     0.0472     0.0355
+           Enlarged PA       3000          9     0.0917      0.222      0.143     0.0172
+                   ILD       3000        316      0.263      0.133      0.105     0.0367
+          Infiltration       3000         79      0.111      0.228      0.119     0.0613
+          Lung Opacity       3000         95     0.0732      0.211     0.0425      0.016
+           Lung cavity       3000         10          1          0     0.0494     0.0125
+             Lung cyst       3000          3          1          0          0          0
+     Mediastinal shift       3000         20      0.181       0.35      0.155     0.0493
+           Nodule/Mass       3000        286      0.285      0.252      0.205     0.0854
+      Pleural effusion       3000        136      0.254       0.25      0.193     0.0513
+    Pleural thickening       3000        240      0.125      0.129     0.0554     0.0162
+          Pneumothorax       3000         25      0.187       0.16      0.155     0.0508
+    Pulmonary fibrosis       3000        358      0.204        0.2       0.11     0.0323
+          Rib fracture       3000         17          0          0    0.00393   0.000817
+          Other lesion       3000        112     0.0929      0.134     0.0302    0.00892
+Ultralytics YOLOv8.2.8 🚀 Python-3.12.3 torch-2.3.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+Model summary (fused): 168 layers, 11134098 parameters, 0 gradients
+Generating Visualizations for batch-1/1:   0%|          | 0/16 [00:00<?, ?it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fd63afac528fb70393d1ca8f442427c4.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   6%|▋         | 1/16 [00:00<00:03,  4.31it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fd6b274f9e2ef0f660d52ed947e58ac3.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  12%|█▎        | 2/16 [00:00<00:03,  4.49it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fdb8f8b25494dfa7024c24e61a56edb4.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  25%|██▌       | 4/16 [00:00<00:02,  4.25it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fdd767c47adfda2c9fa48f5da76bc306.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  38%|███▊      | 6/16 [00:01<00:02,  4.55it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fdf3edb12e482493b9698d76dced9395.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  44%|████▍     | 7/16 [00:01<00:01,  4.73it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fdf93ea409b0d2e4a8a1ba885caa59e4.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  56%|█████▋    | 9/16 [00:01<00:01,  4.89it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fd2e07088ff35c77448f636ad1816039.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  62%|██████▎   | 10/16 [00:02<00:01,  4.52it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fd2e0ef3254e46ba1716bcd5e885f355.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  69%|██████▉   | 11/16 [00:02<00:01,  4.47it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fd332164e7924efb4e11f3186bc8fa4d.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  75%|███████▌  | 12/16 [00:02<00:00,  4.30it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fd3f2abb3ba1d00026654a220d53d9bb.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  81%|████████▏ | 13/16 [00:02<00:00,  4.32it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fd4b7dcfd91bdd1a5b51e96e6e0fe931.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|████████▊ | 14/16 [00:03<00:00,  4.41it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/val/fd536e3e8f6f2336f27c76360c183b72.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|██████████| 16/16 [00:03<00:00,  4.53it/s]
+Speed: 0.5ms preprocess, 8.2ms inference, 0.0ms loss, 0.6ms postprocess per image
+Saving train_VinDr_YOLOv8/200824_YOLOv8s_brightnessEQ_FIXED_FIXEDBB_VAL/predictions.json...
+Results saved to [1mtrain_VinDr_YOLOv8/200824_YOLOv8s_brightnessEQ_FIXED_FIXEDBB_VAL
