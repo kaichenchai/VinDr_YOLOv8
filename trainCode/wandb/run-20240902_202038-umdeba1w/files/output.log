@@ -1,0 +1,245 @@
+New https://pypi.org/project/ultralytics/8.2.86 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.2.80 🚀 Python-3.12.5 torch-2.4.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+[34m[1mengine/trainer: [39m[22mtask=detect, mode=train, model=yolov8s.yaml, data=model.yaml, epochs=2, time=None, patience=100, batch=16, imgsz=1024, save=True, save_period=-1, cache=False, device=[0], workers=8, project=train_VinDr_YOLOv8, name=02092024_YOLOv8s_no_pretrained2, exist_ok=False, pretrained=False, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=train_VinDr_YOLOv8/02092024_YOLOv8s_no_pretrained2
+Overriding model.yaml nc=80 with nc=22
+                   from  n    params  module                                       arguments
+  0                  -1  1       928  ultralytics.nn.modules.conv.Conv             [3, 32, 3, 2]
+  1                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  2                  -1  1     29056  ultralytics.nn.modules.block.C2f             [64, 64, 1, True]
+  3                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  4                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  5                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  6                  -1  2    788480  ultralytics.nn.modules.block.C2f             [256, 256, 2, True]
+  7                  -1  1   1180672  ultralytics.nn.modules.conv.Conv             [256, 512, 3, 2]
+  8                  -1  1   1838080  ultralytics.nn.modules.block.C2f             [512, 512, 1, True]
+  9                  -1  1    656896  ultralytics.nn.modules.block.SPPF            [512, 512, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    591360  ultralytics.nn.modules.block.C2f             [768, 256, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 16                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 19                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1   1969152  ultralytics.nn.modules.block.C2f             [768, 512, 1]
+ 22        [15, 18, 21]  1   2124562  ultralytics.nn.modules.head.Detect           [22, [128, 256, 512]]
+YOLOv8s summary: 225 layers, 11,144,114 parameters, 11,144,098 gradients, 28.7 GFLOPs
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py:271: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.amp)
+[34m[1mtrain: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train.cache... 4522 images, 10478 backgrounds,
+[34m[1mval: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val.cache... 949 images, 2051 backgrounds, 0 cor
+Plotting labels to train_VinDr_YOLOv8/02092024_YOLOv8s_no_pretrained2/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000385, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 1024 train, 1024 val
+Using 8 dataloader workers
+Logging results to [1mtrain_VinDr_YOLOv8/02092024_YOLOv8s_no_pretrained2
+Starting training for 2 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1/2      9.36G      2.962      7.228      3.574         20       1024: 100%|██████████| 938/938 [04:17<00:00,  3.64it/s]
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 94/94 [00:19<00:00,  4.70it/s]
+                   all       3000       2697      0.393     0.0409     0.0121    0.00408
+Ultralytics YOLOv8.2.80 🚀 Python-3.12.5 torch-2.4.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+Traceback (most recent call last):
+  File "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/train.py", line 25, in <module>
+    model.train(project = "train_VinDr_YOLOv8",
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/model.py", line 813, in train
+    self.trainer.train()
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 208, in train
+    self._do_train(world_size)
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 433, in _do_train
+    self.metrics, self.fitness = self.validate()
+                                 ^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 574, in validate
+    metrics = self.validator(self)
+              ^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/validator.py", line 200, in __call__
+    self.run_callbacks("on_val_end")
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/validator.py", line 268, in run_callbacks
+    callback(self)
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/wandb/integration/ultralytics/callback.py", line 362, in on_val_end
+    self.validation_table = plot_detection_validation_results(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/wandb/integration/ultralytics/bbox_utils.py", line 165, in plot_detection_validation_results
+    prediction_results = predictor(batch["im_file"])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/predictor.py", line 168, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Result into one
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 36, in generator_context
+    response = gen.send(None)
+               ^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/predictor.py", line 222, in stream_inference
+    self.setup_model(model)
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/predictor.py", line 303, in setup_model
+    self.model = AutoBackend(
+                 ^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/autobackend.py", line 400, in __init__
+    raise TypeError(
+TypeError: model='yolov8s.yaml' is not a supported model format. See https://docs.ultralytics.com/modes/predict for help.
+                   Format     Argument           Suffix    CPU    GPU
+0                 PyTorch            -              .pt   True   True
+1             TorchScript  torchscript     .torchscript   True   True
+2                    ONNX         onnx            .onnx   True   True
+3                OpenVINO     openvino  _openvino_model   True  False
+4                TensorRT       engine          .engine  False   True
+5                  CoreML       coreml       .mlpackage   True  False
+6   TensorFlow SavedModel  saved_model     _saved_model   True   True
+7     TensorFlow GraphDef           pb              .pb   True   True
+8         TensorFlow Lite       tflite          .tflite   True  False
+9     TensorFlow Edge TPU      edgetpu  _edgetpu.tflite   True  False
+10          TensorFlow.js         tfjs       _web_model   True  False
+11           PaddlePaddle       paddle    _paddle_model   True   True
+12                   NCNN         ncnn      _ncnn_model   True   True
