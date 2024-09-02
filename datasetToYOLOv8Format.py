@@ -182,6 +182,6 @@ if __name__ == "__main__":
     #valDimDict = getDim("new_dataset/images/val")
     #makeLabelsVal("original_dataset/annotations/annotations_test.csv", "new_dataset/labels/val", valDimDict, classesDict)
     print("Making training set")
-    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/anno_trainFIXED.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
+    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/kaggleTrain.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
     print("Making testing set")
-    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/anno_testFIXED.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
+    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/kaggleTest.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
