@@ -1,0 +1,42 @@
+wandb_version: 1
+
+epochs:
+  desc: null
+  value: 50
+dataset:
+  desc: null
+  value: FULL_brightnessEQ_VinDr_FIXED_FIXEDBB
+model:
+  desc: null
+  value: YOLOv8m
+image_size:
+  desc: null
+  value: 1024
+machine:
+  desc: null
+  value: Thermaltake_2080ti_0
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.5
+    cli_version: 0.16.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1725281051.0
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.12.5
+      5: 0.16.6
+      8:
+      - 5
+      13: linux-x86_64
