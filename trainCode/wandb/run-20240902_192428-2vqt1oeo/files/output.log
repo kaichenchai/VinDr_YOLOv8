@@ -1,0 +1,45 @@
+Overriding model.yaml nc=80 with nc=22
+Transferred 469/475 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py:271: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.amp)
+[34m[1mtrain: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train.cache... 4522 images, 10478 backgrounds,
+[34m[1mval: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val.cache... 949 images, 2051 backgrounds, 0 cor
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/train/d8275cd2eabf34a7f7bf22bdd838bc70.png: 1 duplicate labels removed
+Plotting labels to train_VinDr_YOLOv8/02092024_YOLOv8m_pretrained/labels.jpg...
+  0%|          | 0/938 [00:00<?, ?it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m SGD(lr=0.01, momentum=0.9) with parameter groups 77 weight(decay=0.0), 84 weight(decay=0.0005), 83 bias(decay=0.0)
+Image sizes 1024 train, 1024 val
+Using 16 dataloader workers
+Logging results to [1mtrain_VinDr_YOLOv8/02092024_YOLOv8m_pretrained
+Starting training for 50 epochs...
+
+
+
+
+
+
+
+
+
+
+       1/50      8.36G      2.734      35.16      2.629          9       1024:   7%|▋         | 63/938 [00:21<04:57,  2.94it/s]
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/kai/.config/Ultralytics/DDP/_temp_15gbw7v2135033421482512.py", line 13, in <module>
+[rank0]:     results = trainer.train()
+[rank0]:               ^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 208, in train
+[rank0]:     self._do_train(world_size)
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 393, in _do_train
+[rank0]:     self.scaler.scale(self.loss).backward()
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/_tensor.py", line 521, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/autograd/__init__.py", line 289, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/autograd/graph.py", line 768, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: KeyboardInterrupt

@@ -1,0 +1,241 @@
+Overriding model.yaml nc=80 with nc=22
+Transferred 469/475 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py:271: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.amp)
+[34m[1mtrain: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train.cache... 4522 images, 10478 backgrounds,
+[34m[1mval: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val.cache... 949 images, 2051 backgrounds, 0 cor
+[34m[1mtrain: [39m[22mWARNING ⚠️ /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/train/d8275cd2eabf34a7f7bf22bdd838bc70.png: 1 duplicate labels removed
+Plotting labels to train_VinDr_YOLOv8/02092024_YOLOv8m_pretrained2/labels.jpg...
+  0%|          | 0/938 [00:00<?, ?it/s]
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.000714, momentum=0.9) with parameter groups 77 weight(decay=0.0), 84 weight(decay=0.0005), 83 bias(decay=0.0)
+Image sizes 1024 train, 1024 val
+Using 16 dataloader workers
+Logging results to [1mtrain_VinDr_YOLOv8/02092024_YOLOv8m_pretrained2
+Starting training for 1 epochs...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        1/1      8.38G       2.11      7.104      2.127          2       1024: 100%|██████████| 938/938 [05:06<00:00,  3.06it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 188/188 [00:38<00:00,  4.92it/s]
+                   all       3000       2696      0.425     0.0382     0.0248    0.00884
+1 epochs completed in 0.097 hours.
+Optimizer stripped from train_VinDr_YOLOv8/02092024_YOLOv8m_pretrained2/weights/last.pt, 52.1MB
+Optimizer stripped from train_VinDr_YOLOv8/02092024_YOLOv8m_pretrained2/weights/best.pt, 52.1MB
+Validating train_VinDr_YOLOv8/02092024_YOLOv8m_pretrained2/weights/best.pt...
+Ultralytics YOLOv8.2.80 🚀 Python-3.12.5 torch-2.4.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+                                                     CUDA:1 (NVIDIA GeForce RTX 2080 Ti, 11004MiB)
+Model summary (fused): 218 layers, 25,852,498 parameters, 0 gradients, 78.8 GFLOPs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 188/188 [00:34<00:00,  5.43it/s]
+                   all       3000       2696      0.426     0.0382     0.0248     0.0088
+    Aortic enlargement        220        221     0.0863      0.443     0.0835     0.0292
+           Atelectasis         86         96          0          0          0          0
+         Calcification        194        232          1          0     0.0058    0.00153
+          Cardiomegaly        309        309      0.228      0.294      0.219     0.0863
+     Clavicle fracture          2          2          0          0          0          0
+         Consolidation         96        126          1          0     0.0536     0.0113
+             Emphysema          3          4          0          0          0          0
+           Enlarged PA          8          9          0          0          0          0
+                   ILD        221        316          1          0     0.0367     0.0132
+          Infiltration         58         79          1          0     0.0132    0.00437
+          Lung Opacity         84         95          0          0    0.00229   0.000753
+           Lung cavity          9         10          0          0          0          0
+             Lung cyst          2          3          0          0          0          0
+     Mediastinal shift         20         20          0          0          0          0
+           Nodule/Mass        176        286      0.539      0.049     0.0731     0.0289
+      Pleural effusion        111        136      0.101     0.0147     0.0146    0.00315
+    Pleural thickening        169        240          1          0    0.00467     0.0011
+          Pneumothorax         18         25          0          0          0          0
+    Pulmonary fibrosis        217        358          1          0      0.014    0.00468
+          Rib fracture         11         17          1          0          0          0
+          Other lesion         94        112          1          0   0.000772   0.000289
+Speed: 0.4ms preprocess, 10.0ms inference, 0.0ms loss, 0.5ms postprocess per image
+Results saved to [1mtrain_VinDr_YOLOv8/02092024_YOLOv8m_pretrained2

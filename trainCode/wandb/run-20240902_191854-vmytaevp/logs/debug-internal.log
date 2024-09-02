@@ -1,0 +1,335 @@
+2024-09-02 19:18:54,787 INFO    StreamThr :188272 [internal.py:wandb_internal():86] W&B internal server running at pid: 188272, started at: 2024-09-02 19:18:54.786788
+2024-09-02 19:18:54,789 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: status
+2024-09-02 19:18:54,791 INFO    WriterThread:188272 [datastore.py:open_for_write():87] open: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/run-vmytaevp.wandb
+2024-09-02 19:18:54,791 DEBUG   SenderThread:188272 [sender.py:send():379] send: header
+2024-09-02 19:18:54,797 DEBUG   SenderThread:188272 [sender.py:send():379] send: run
+2024-09-02 19:18:55,500 INFO    SenderThread:188272 [dir_watcher.py:__init__():211] watching files in: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files
+2024-09-02 19:18:55,500 INFO    SenderThread:188272 [sender.py:_start_run_threads():1124] run started: vmytaevp with start time 1725275934.785788
+2024-09-02 19:18:55,514 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: check_version
+2024-09-02 19:18:55,515 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: check_version
+2024-09-02 19:18:55,588 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: run_start
+2024-09-02 19:18:55,590 DEBUG   HandlerThread:188272 [system_info.py:__init__():26] System info init
+2024-09-02 19:18:55,590 DEBUG   HandlerThread:188272 [system_info.py:__init__():41] System info init done
+2024-09-02 19:18:55,590 INFO    HandlerThread:188272 [system_monitor.py:start():194] Starting system monitor
+2024-09-02 19:18:55,590 INFO    SystemMonitor:188272 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-02 19:18:55,590 INFO    HandlerThread:188272 [system_monitor.py:probe():214] Collecting system info
+2024-09-02 19:18:55,591 INFO    SystemMonitor:188272 [interfaces.py:start():190] Started cpu monitoring
+2024-09-02 19:18:55,592 INFO    SystemMonitor:188272 [interfaces.py:start():190] Started disk monitoring
+2024-09-02 19:18:55,593 INFO    SystemMonitor:188272 [interfaces.py:start():190] Started gpu monitoring
+2024-09-02 19:18:55,595 INFO    SystemMonitor:188272 [interfaces.py:start():190] Started memory monitoring
+2024-09-02 19:18:55,596 INFO    SystemMonitor:188272 [interfaces.py:start():190] Started network monitoring
+2024-09-02 19:18:55,606 DEBUG   HandlerThread:188272 [system_info.py:probe():150] Probing system
+2024-09-02 19:18:55,606 DEBUG   HandlerThread:188272 [system_info.py:_probe_git():135] Probing git
+2024-09-02 19:18:55,614 DEBUG   HandlerThread:188272 [system_info.py:_probe_git():143] Probing git done
+2024-09-02 19:18:55,614 DEBUG   HandlerThread:188272 [system_info.py:probe():198] Probing system done
+2024-09-02 19:18:55,614 DEBUG   HandlerThread:188272 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-28-generic-x86_64-with-glibc2.35', 'python': '3.12.5', 'heartbeatAt': '2024-09-02T11:18:55.606315', 'startedAt': '2024-09-02T11:18:54.782377', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/kai/.config/Ultralytics/DDP/_temp_s4ahsvg4130584457650704.py', 'codePathLocal': None, 'git': {'remote': 'https://github.com/kaichenchai/VinDr_YOLOv8/', 'commit': 'e16253942fa31649ef49e5352a39e925316cb377'}, 'email': 'englishorc65@gmail.com', 'root': '/mnt/data/kai/VinDr_YOLOv8_experiments', 'host': 'thermaltake', 'username': 'kai', 'executable': '/home/kai/miniconda3/envs/yolov8/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1220.8522, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 1228.491, 'min': 1200.0, 'max': 4100.0}, {'current': 3606.482, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.125, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1324.386, 'min': 1200.0, 'max': 4100.0}, {'current': 1664.06, 'min': 1200.0, 'max': 4100.0}, {'current': 2702.114, 'min': 1200.0, 'max': 4100.0}, {'current': 1246.941, 'min': 1200.0, 'max': 4100.0}, {'current': 1199.942, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4200.0}, {'current': 2233.99, 'min': 1200.0, 'max': 4100.0}, {'current': 1534.41, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4200.0}], 'disk': {'/': {'total': 3753.976058959961, 'used': 337.078369140625}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 62.46904373168945}}
+2024-09-02 19:18:55,614 INFO    HandlerThread:188272 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-02 19:18:55,614 INFO    HandlerThread:188272 [system_monitor.py:probe():227] Publishing system info
+2024-09-02 19:18:55,614 DEBUG   HandlerThread:188272 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-09-02 19:18:56,502 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/conda-environment.yaml
+2024-09-02 19:18:56,932 DEBUG   HandlerThread:188272 [system_info.py:_save_conda():222] Saving conda packages done
+2024-09-02 19:18:56,933 INFO    HandlerThread:188272 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-02 19:18:56,934 DEBUG   SenderThread:188272 [sender.py:send():379] send: files
+2024-09-02 19:18:56,935 INFO    SenderThread:188272 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-09-02 19:18:56,983 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: python_packages
+2024-09-02 19:18:56,984 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: python_packages
+2024-09-02 19:18:56,984 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: stop_status
+2024-09-02 19:18:56,985 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: stop_status
+2024-09-02 19:18:56,988 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: internal_messages
+2024-09-02 19:18:57,407 DEBUG   SenderThread:188272 [sender.py:send():379] send: telemetry
+2024-09-02 19:18:57,501 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/conda-environment.yaml
+2024-09-02 19:18:57,501 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/requirements.txt
+2024-09-02 19:18:57,501 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/output.log
+2024-09-02 19:18:57,501 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/wandb-metadata.json
+2024-09-02 19:18:57,876 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: status_report
+2024-09-02 19:18:58,046 INFO    wandb-upload_0:188272 [upload_job.py:push():131] Uploaded file /tmp/tmpdszanoz9wandb/s3ecdnt3-wandb-metadata.json
+2024-09-02 19:18:58,930 DEBUG   SenderThread:188272 [sender.py:send():379] send: telemetry
+2024-09-02 19:18:59,502 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/output.log
+2024-09-02 19:19:00,240 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: status_report
+2024-09-02 19:19:01,502 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/output.log
+2024-09-02 19:19:02,877 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: status_report
+2024-09-02 19:19:03,503 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/output.log
+2024-09-02 19:19:04,284 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: stop_status
+2024-09-02 19:19:04,285 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: internal_messages
+2024-09-02 19:19:04,285 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: stop_status
+2024-09-02 19:19:05,404 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: status_report
+2024-09-02 19:19:05,504 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/output.log
+2024-09-02 19:19:06,195 DEBUG   SenderThread:188272 [sender.py:send():379] send: exit
+2024-09-02 19:19:06,195 INFO    SenderThread:188272 [sender.py:send_exit():586] handling exit code: 1
+2024-09-02 19:19:06,195 INFO    SenderThread:188272 [sender.py:send_exit():588] handling runtime: 18
+2024-09-02 19:19:06,196 DEBUG   SenderThread:188272 [sender.py:send():379] send: exit
+2024-09-02 19:19:06,198 INFO    SenderThread:188272 [sender.py:send_exit():586] handling exit code: 1
+2024-09-02 19:19:06,198 INFO    SenderThread:188272 [sender.py:send_exit():588] handling runtime: 10
+2024-09-02 19:19:06,198 INFO    SenderThread:188272 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-09-02 19:19:06,199 INFO    SenderThread:188272 [sender.py:send_exit():594] send defer
+2024-09-02 19:19:06,199 INFO    SenderThread:188272 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-09-02 19:19:06,200 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,200 INFO    SenderThread:188272 [sender.py:send_exit():594] send defer
+2024-09-02 19:19:06,200 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 0
+2024-09-02 19:19:06,201 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,201 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 0
+2024-09-02 19:19:06,201 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,202 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-09-02 19:19:06,202 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,202 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 1
+2024-09-02 19:19:06,202 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-09-02 19:19:06,202 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 1
+2024-09-02 19:19:06,203 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,203 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,203 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 1
+2024-09-02 19:19:06,203 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 1
+2024-09-02 19:19:06,204 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,204 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,204 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-09-02 19:19:06,204 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-09-02 19:19:06,204 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 2
+2024-09-02 19:19:06,204 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 2
+2024-09-02 19:19:06,204 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,204 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,204 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 2
+2024-09-02 19:19:06,204 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 2
+2024-09-02 19:19:06,204 INFO    HandlerThread:188272 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-02 19:19:06,205 INFO    HandlerThread:188272 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-02 19:19:06,205 DEBUG   SystemMonitor:188272 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-02 19:19:06,205 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined cpu monitor
+2024-09-02 19:19:06,206 DEBUG   SystemMonitor:188272 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-02 19:19:06,206 DEBUG   SystemMonitor:188272 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-02 19:19:06,206 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined cpu monitor
+2024-09-02 19:19:06,207 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined disk monitor
+2024-09-02 19:19:06,207 DEBUG   SystemMonitor:188272 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-02 19:19:06,207 DEBUG   SystemMonitor:188272 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-02 19:19:06,207 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined disk monitor
+2024-09-02 19:19:06,208 DEBUG   SystemMonitor:188272 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-02 19:19:06,212 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined gpu monitor
+2024-09-02 19:19:06,212 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined memory monitor
+2024-09-02 19:19:06,212 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined network monitor
+2024-09-02 19:19:06,213 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,213 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-09-02 19:19:06,213 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 3
+2024-09-02 19:19:06,213 DEBUG   SenderThread:188272 [sender.py:send():379] send: stats
+2024-09-02 19:19:06,213 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,213 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 3
+2024-09-02 19:19:06,214 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,214 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-09-02 19:19:06,214 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 4
+2024-09-02 19:19:06,214 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,214 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 4
+2024-09-02 19:19:06,214 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,214 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-09-02 19:19:06,214 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 5
+2024-09-02 19:19:06,214 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,214 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 5
+2024-09-02 19:19:06,214 DEBUG   SenderThread:188272 [sender.py:send():379] send: summary
+2024-09-02 19:19:06,215 INFO    SenderThread:188272 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-09-02 19:19:06,215 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,215 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-09-02 19:19:06,215 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 6
+2024-09-02 19:19:06,215 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,215 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 6
+2024-09-02 19:19:06,215 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,215 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-09-02 19:19:06,218 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: status_report
+2024-09-02 19:19:06,306 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined gpu monitor
+2024-09-02 19:19:06,307 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined memory monitor
+2024-09-02 19:19:06,307 INFO    HandlerThread:188272 [interfaces.py:finish():202] Joined network monitor
+2024-09-02 19:19:06,307 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,307 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-09-02 19:19:06,307 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 3
+2024-09-02 19:19:06,307 DEBUG   SenderThread:188272 [sender.py:send():379] send: stats
+2024-09-02 19:19:06,308 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,308 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 3
+2024-09-02 19:19:06,308 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,308 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-09-02 19:19:06,308 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 4
+2024-09-02 19:19:06,308 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,308 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 4
+2024-09-02 19:19:06,308 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,308 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-09-02 19:19:06,308 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 5
+2024-09-02 19:19:06,308 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,308 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 5
+2024-09-02 19:19:06,309 DEBUG   SenderThread:188272 [sender.py:send():379] send: summary
+2024-09-02 19:19:06,309 INFO    SenderThread:188272 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-09-02 19:19:06,309 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,309 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-09-02 19:19:06,309 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 6
+2024-09-02 19:19:06,309 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:06,309 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 6
+2024-09-02 19:19:06,309 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:06,309 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-09-02 19:19:06,311 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: status_report
+2024-09-02 19:19:06,504 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/wandb-summary.json
+2024-09-02 19:19:06,811 INFO    Thread-12 :188272 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/wandb-summary.json
+2024-09-02 19:19:07,196 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:07,197 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:07,431 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 7
+2024-09-02 19:19:07,432 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:07,432 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:07,432 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 7
+2024-09-02 19:19:07,433 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:07,433 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-09-02 19:19:07,449 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 7
+2024-09-02 19:19:07,449 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:07,449 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:07,450 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 7
+2024-09-02 19:19:07,450 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:07,450 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-09-02 19:19:07,505 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/config.yaml
+2024-09-02 19:19:07,812 INFO    Thread-12 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/config.yaml
+2024-09-02 19:19:08,159 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 8
+2024-09-02 19:19:08,160 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:08,160 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 8
+2024-09-02 19:19:08,160 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:08,160 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-09-02 19:19:08,160 INFO    SenderThread:188272 [job_builder.py:build():318] Attempting to build job artifact
+2024-09-02 19:19:08,161 INFO    SenderThread:188272 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-09-02 19:19:08,177 INFO    SenderThread:188272 [job_builder.py:build():431] adding wandb-job metadata file
+2024-09-02 19:19:08,183 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 9
+2024-09-02 19:19:08,184 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:08,184 DEBUG   SenderThread:188272 [sender.py:send():379] send: artifact
+2024-09-02 19:19:08,184 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 9
+2024-09-02 19:19:08,197 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:08,198 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:08,812 INFO    Thread-12 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/output.log
+2024-09-02 19:19:09,455 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 8
+2024-09-02 19:19:09,455 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:09,455 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:09,456 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 8
+2024-09-02 19:19:09,456 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:09,456 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-09-02 19:19:09,457 INFO    SenderThread:188272 [job_builder.py:build():318] Attempting to build job artifact
+2024-09-02 19:19:09,458 INFO    SenderThread:188272 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-09-02 19:19:09,458 WARNING SenderThread:188272 [job_builder.py:_log_if_verbose():210] No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2024-09-02 19:19:09,458 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 9
+2024-09-02 19:19:09,458 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:09,458 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 9
+2024-09-02 19:19:09,459 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:09,459 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-09-02 19:19:09,459 INFO    SenderThread:188272 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-02 19:19:09,506 INFO    Thread-25 :188272 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/output.log
+2024-09-02 19:19:09,507 INFO    SenderThread:188272 [dir_watcher.py:finish():388] scan: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files
+2024-09-02 19:19:09,507 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/requirements.txt requirements.txt
+2024-09-02 19:19:09,507 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/wandb-summary.json wandb-summary.json
+2024-09-02 19:19:09,511 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/config.yaml config.yaml
+2024-09-02 19:19:09,511 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/conda-environment.yaml conda-environment.yaml
+2024-09-02 19:19:09,515 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/wandb-metadata.json wandb-metadata.json
+2024-09-02 19:19:09,515 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/output.log output.log
+2024-09-02 19:19:09,518 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 10
+2024-09-02 19:19:09,521 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:09,522 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 10
+2024-09-02 19:19:09,525 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:09,525 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-09-02 19:19:09,525 INFO    SenderThread:188272 [file_pusher.py:finish():172] shutting down file pusher
+2024-09-02 19:19:09,792 INFO    wandb-upload_0:188272 [upload_job.py:push():86] Skipped uploading /home/kai/.local/share/wandb/artifacts/staging/tmpsbqb10mf
+2024-09-02 19:19:10,071 INFO    wandb-upload_1:188272 [upload_job.py:push():89] Uploaded file /tmp/tmpqwqq5crt/wandb-job.json
+2024-09-02 19:19:10,077 INFO    wandb-upload_1:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/wandb-summary.json
+2024-09-02 19:19:10,199 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:10,200 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:10,426 INFO    wandb-upload_0:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/requirements.txt
+2024-09-02 19:19:10,455 INFO    wandb-upload_4:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/output.log
+2024-09-02 19:19:10,585 INFO    wandb-upload_2:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/config.yaml
+2024-09-02 19:19:10,588 INFO    wandb-upload_3:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191854-vmytaevp/files/conda-environment.yaml
+2024-09-02 19:19:10,789 INFO    Thread-24 (_thread_body):188272 [sender.py:transition_state():614] send defer: 11
+2024-09-02 19:19:10,790 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:10,790 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 11
+2024-09-02 19:19:10,790 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:10,791 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-09-02 19:19:10,791 INFO    SenderThread:188272 [file_pusher.py:join():178] waiting for file pusher
+2024-09-02 19:19:10,791 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 12
+2024-09-02 19:19:10,791 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:10,792 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 12
+2024-09-02 19:19:10,792 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:10,792 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-09-02 19:19:10,792 INFO    SenderThread:188272 [file_stream.py:finish():614] file stream finish called
+2024-09-02 19:19:11,058 INFO    SenderThread:188272 [file_stream.py:finish():618] file stream finish is done
+2024-09-02 19:19:11,058 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 13
+2024-09-02 19:19:11,058 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:11,059 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 13
+2024-09-02 19:19:11,059 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:11,059 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-09-02 19:19:11,059 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 14
+2024-09-02 19:19:11,060 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:11,060 DEBUG   SenderThread:188272 [sender.py:send():379] send: final
+2024-09-02 19:19:11,061 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 14
+2024-09-02 19:19:11,061 DEBUG   SenderThread:188272 [sender.py:send():379] send: footer
+2024-09-02 19:19:11,061 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:11,061 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-09-02 19:19:11,062 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:11,063 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:11,734 INFO    SenderThread:188272 [sender.py:send_artifact():1468] sent artifact job-https___github.com_kaichenchai_VinDr_YOLOv8__trainCode_train.py - {'id': 'QXJ0aWZhY3Q6MTE3NjU3OTEyOQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxMzgwOTA3MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE3NjU3MjQzOQ==', 'versionIndex': 10}}}
+2024-09-02 19:19:11,734 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:11,734 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-09-02 19:19:11,734 INFO    SenderThread:188272 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-02 19:19:11,814 INFO    SenderThread:188272 [dir_watcher.py:finish():388] scan: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files
+2024-09-02 19:19:11,815 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/requirements.txt requirements.txt
+2024-09-02 19:19:11,815 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/wandb-summary.json wandb-summary.json
+2024-09-02 19:19:11,815 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/config.yaml config.yaml
+2024-09-02 19:19:11,821 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/conda-environment.yaml conda-environment.yaml
+2024-09-02 19:19:11,821 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/wandb-metadata.json wandb-metadata.json
+2024-09-02 19:19:11,821 INFO    SenderThread:188272 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/output.log output.log
+2024-09-02 19:19:11,821 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 10
+2024-09-02 19:19:11,821 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:11,822 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:11,822 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 10
+2024-09-02 19:19:11,822 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:11,825 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-09-02 19:19:11,825 INFO    SenderThread:188272 [file_pusher.py:finish():172] shutting down file pusher
+2024-09-02 19:19:12,063 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:12,063 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:12,064 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:12,065 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:12,449 INFO    wandb-upload_1:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/wandb-summary.json
+2024-09-02 19:19:12,714 INFO    wandb-upload_3:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/conda-environment.yaml
+2024-09-02 19:19:12,715 INFO    wandb-upload_0:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/requirements.txt
+2024-09-02 19:19:12,892 INFO    wandb-upload_2:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/config.yaml
+2024-09-02 19:19:13,064 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:13,065 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:13,065 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:13,066 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:13,384 INFO    wandb-upload_4:188272 [upload_job.py:push():131] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/files/output.log
+2024-09-02 19:19:13,584 INFO    Thread-11 (_thread_body):188272 [sender.py:transition_state():614] send defer: 11
+2024-09-02 19:19:13,585 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:13,586 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 11
+2024-09-02 19:19:13,586 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:13,586 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-09-02 19:19:13,586 INFO    SenderThread:188272 [file_pusher.py:join():178] waiting for file pusher
+2024-09-02 19:19:13,587 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 12
+2024-09-02 19:19:13,587 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:13,587 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 12
+2024-09-02 19:19:13,587 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: status_report
+2024-09-02 19:19:13,588 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:13,588 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-09-02 19:19:13,588 INFO    SenderThread:188272 [file_stream.py:finish():614] file stream finish called
+2024-09-02 19:19:13,830 INFO    SenderThread:188272 [file_stream.py:finish():618] file stream finish is done
+2024-09-02 19:19:13,830 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 13
+2024-09-02 19:19:13,830 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:13,831 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 13
+2024-09-02 19:19:13,831 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:13,831 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-09-02 19:19:13,831 INFO    SenderThread:188272 [sender.py:transition_state():614] send defer: 14
+2024-09-02 19:19:13,832 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: defer
+2024-09-02 19:19:13,832 DEBUG   SenderThread:188272 [sender.py:send():379] send: final
+2024-09-02 19:19:13,832 INFO    HandlerThread:188272 [handler.py:handle_request_defer():172] handle defer: 14
+2024-09-02 19:19:13,833 DEBUG   SenderThread:188272 [sender.py:send():379] send: footer
+2024-09-02 19:19:13,833 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: defer
+2024-09-02 19:19:13,833 INFO    SenderThread:188272 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-09-02 19:19:13,834 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:13,835 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:13,835 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:13,836 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: poll_exit
+2024-09-02 19:19:13,837 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:13,837 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: poll_exit
+2024-09-02 19:19:13,837 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: server_info
+2024-09-02 19:19:13,838 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: get_summary
+2024-09-02 19:19:13,838 DEBUG   SenderThread:188272 [sender.py:send_request():406] send_request: server_info
+2024-09-02 19:19:13,840 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: sampled_history
+2024-09-02 19:19:13,841 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: internal_messages
+2024-09-02 19:19:14,072 INFO    MainThread:188272 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-09-02 19:19:14,072 INFO    MainThread:188272 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-09-02 19:19:14,072 INFO    MainThread:188272 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-09-02 19:19:14,073 DEBUG   HandlerThread:188272 [handler.py:handle_request():146] handle_request: shutdown
+2024-09-02 19:19:14,073 INFO    HandlerThread:188272 [handler.py:finish():866] shutting down handler
+2024-09-02 19:19:14,838 INFO    WriterThread:188272 [datastore.py:close():296] close: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240902_191847-48xf65g9/run-48xf65g9.wandb
+2024-09-02 19:19:15,072 INFO    SenderThread:188272 [sender.py:finish():1546] shutting down sender
+2024-09-02 19:19:15,072 INFO    SenderThread:188272 [file_pusher.py:finish():172] shutting down file pusher
+2024-09-02 19:19:15,072 INFO    SenderThread:188272 [file_pusher.py:join():178] waiting for file pusher
