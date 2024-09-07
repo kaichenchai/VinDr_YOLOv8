@@ -1,0 +1,158 @@
+wandb_version: 1
+
+epochs:
+  desc: null
+  value: 50
+dataset:
+  desc: null
+  value: FULL_brightnessEQ_VinDr_FIXED_subsetAO-C
+model:
+  desc: null
+  value: YOLOv8s
+image_size:
+  desc: null
+  value: 1024
+batch_size:
+  desc: null
+  value: 16
+machine:
+  desc: null
+  value: Thermaltake_2080ti_0
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.5
+    cli_version: 0.17.8
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1725441304
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 5
+      - 13
+      - 14
+      - 16
+      - 23
+      - 62
+      4: 3.12.5
+      5: 0.17.8
+      8:
+      - 5
+      13: linux-x86_64
+train:
+  desc: null
+  value:
+    amp: true
+    bgr: 0
+    box: 7.5
+    cfg: null
+    cls: 0.5
+    dfl: 1.5
+    dnn: false
+    iou: 0.7
+    lr0: 0.01
+    lrf: 0.01
+    nbs: 64
+    nms: false
+    val: true
+    conf: null
+    data: subset.yaml
+    half: false
+    int8: false
+    kobj: 1
+    mode: train
+    name: 04092024_YOLOv8s_subset2
+    pose: 12
+    rect: false
+    save: true
+    seed: 0
+    show: false
+    task: detect
+    time: null
+    batch: 16
+    cache: false
+    embed: null
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    imgsz: 1024
+    keras: false
+    mixup: 0
+    model: yolov8s.pt
+    opset: null
+    plots: true
+    scale: 0.5
+    shear: 0
+    split: val
+    cos_lr: false
+    device:
+    - 0
+    epochs: 50
+    fliplr: 0.5
+    flipud: 0
+    format: torchscript
+    freeze: null
+    mosaic: 1
+    resume: false
+    source: null
+    augment: false
+    classes: null
+    degrees: 0
+    dropout: 0
+    dynamic: false
+    erasing: 0.4
+    max_det: 300
+    profile: false
+    project: train_VinDr_YOLOv8
+    tracker: botsort.yaml
+    verbose: true
+    workers: 8
+    exist_ok: false
+    fraction: 1
+    momentum: 0.937
+    optimize: false
+    patience: 100
+    save_dir: train_VinDr_YOLOv8/04092024_YOLOv8s_subset2
+    save_txt: false
+    simplify: false
+    optimizer: auto
+    save_conf: false
+    save_crop: false
+    save_json: false
+    show_conf: true
+    translate: 0.1
+    visualize: false
+    workspace: 4
+    copy_paste: 0
+    line_width: null
+    mask_ratio: 4
+    pretrained: true
+    show_boxes: true
+    single_cls: false
+    vid_stride: 1
+    multi_scale: false
+    perspective: 0
+    save_frames: false
+    save_hybrid: false
+    save_period: -1
+    show_labels: true
+    agnostic_nms: false
+    auto_augment: randaugment
+    close_mosaic: 10
+    overlap_mask: true
+    retina_masks: false
+    weight_decay: 0.0005
+    crop_fraction: 1
+    deterministic: true
+    stream_buffer: false
+    warmup_epochs: 3
+    warmup_bias_lr: 0
+    label_smoothing: 0
+    warmup_momentum: 0.8

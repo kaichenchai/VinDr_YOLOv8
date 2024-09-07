@@ -1,0 +1,168 @@
+2024-09-04 17:15:04,306 INFO    StreamThr :600994 [internal.py:wandb_internal():85] W&B internal server running at pid: 600994, started at: 2024-09-04 17:15:04.306056
+2024-09-04 17:15:04,309 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: status
+2024-09-04 17:15:04,311 INFO    WriterThread:600994 [datastore.py:open_for_write():87] open: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/run-xkzsr7xu.wandb
+2024-09-04 17:15:04,312 DEBUG   SenderThread:600994 [sender.py:send():391] send: header
+2024-09-04 17:15:04,313 DEBUG   SenderThread:600994 [sender.py:send():391] send: run
+2024-09-04 17:15:04,315 INFO    SenderThread:600994 [sender.py:_setup_resume():761] checking resume status for None/VinDr_YOLOv8/xkzsr7xu
+2024-09-04 17:15:04,689 INFO    SenderThread:600994 [sender.py:_setup_resume():841] configured resuming with: ResumeState(resumed=True,step=16,history=15,events=139,output=1939,runtime=4176.915366,wandb_runtime=4176,summary={'Validation-Table': {'_latest_artifact_path': 'wandb-client-artifact://87g44eiip55fm8ykxagd2hosda72jl0n05yqrqmalqunpi2z9399z0ojcq2q7kmtbrnc3si2n8xadtwfgnjqjmigwra89chum2nieas93arl2flrdrhvtfstk0v5fk90:latest/Validation-Table.table.json', '_type': 'table-file', 'artifact_path': 'wandb-client-artifact://ews7abbdktwtbe82fxe4ox37jlgoosg0key1golmph9tpj5999r5itrbgmgyfnvl4e3eyazjykh63erkqkbqnavtf3o15041qs9k2u2zirrnldxzzrknaezlqm8n5w8i/Validation-Table.table.json', 'ncols': 6, 'nrows': 5, 'path': 'media/table/Validation-Table_1_7a7cc9b2aa5fc8b38c23.table.json', 'sha256': '7a7cc9b2aa5fc8b38c230b0f6ef5fd4c645b471655a153ea7c16ee188f0719e7', 'size': 6533}, '_runtime': 4158.330240249634, '_step': 15, '_timestamp': 1725427057.2560642, '_wandb': {'runtime': 4176}, 'labels': {'_type': 'image-file', 'format': 'jpg', 'height': 1600, 'path': 'media/images/labels_1_8b3e46c799d7476ee69a.jpg', 'sha256': '8b3e46c799d7476ee69a4232d0c1268012aba8b2ea5dbb8daed092f0b9b83f7a', 'size': 130661, 'width': 1600}, 'lr/pg0': 0.007228, 'lr/pg1': 0.007228, 'lr/pg2': 0.007228, 'metrics/mAP50(B)': 0.37984, 'metrics/mAP50-95(B)': 0.16277, 'metrics/precision(B)': 0.35734, 'metrics/recall(B)': 0.45864, 'model/GFLOPs': 28.649, 'model/parameters': 11136374, 'model/speed_PyTorch(ms)': 4.533, 'train/box_loss': 1.2913, 'train/cls_loss': 1.35562, 'train/dfl_loss': 1.29904, 'train_batch0': {'_type': 'image-file', 'format': 'jpg', 'height': 1920, 'path': 'media/images/train_batch0_1_5261329c5077a1d07597.jpg', 'sha256': '5261329c5077a1d075978eb867ee0a68a69ccbd582ffe086c1416b5f2a3d3988', 'size': 425796, 'width': 1920}, 'train_batch1': {'_type': 'image-file', 'format': 'jpg', 'height': 1920, 'path': 'media/images/train_batch1_1_99fcc9e61160e8e13a36.jpg', 'sha256': '99fcc9e61160e8e13a368865e135226a54154b2190f65fedac3a5682b1b73337', 'size': 514149, 'width': 1920}, 'train_batch2': {'_type': 'image-file', 'format': 'jpg', 'height': 1920, 'path': 'media/images/train_batch2_1_b75992572e7ee7290c1e.jpg', 'sha256': 'b75992572e7ee7290c1e1d9fcb2195402430f35898419249d4932e48ac63ee4f', 'size': 508249, 'width': 1920}, 'val/box_loss': 2.00802, 'val/cls_loss': 2.56516, 'val/dfl_loss': 2.20029},config={'model': {'desc': None, 'value': 'YOLOv8s'}, 'train': {'desc': None, 'value': {'amp': True, 'bgr': 0, 'box': 7.5, 'cfg': None, 'cls': 0.5, 'dfl': 1.5, 'dnn': False, 'iou': 0.7, 'lr0': 0.01, 'lrf': 0.01, 'nbs': 64, 'nms': False, 'val': True, 'conf': None, 'data': 'subset.yaml', 'half': False, 'int8': False, 'kobj': 1, 'mode': 'train', 'name': '04092024_YOLOv8s_subset2', 'pose': 12, 'rect': False, 'save': True, 'seed': 0, 'show': False, 'task': 'detect', 'time': None, 'batch': 16, 'cache': False, 'embed': None, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'imgsz': 1024, 'keras': False, 'mixup': 0, 'model': 'yolov8s.pt', 'opset': None, 'plots': True, 'scale': 0.5, 'shear': 0, 'split': 'val', 'cos_lr': False, 'device': [0], 'epochs': 50, 'fliplr': 0.5, 'flipud': 0, 'format': 'torchscript', 'freeze': None, 'mosaic': 1, 'resume': False, 'source': None, 'augment': False, 'classes': None, 'degrees': 0, 'dropout': 0, 'dynamic': False, 'erasing': 0.4, 'max_det': 300, 'profile': False, 'project': 'train_VinDr_YOLOv8', 'tracker': 'botsort.yaml', 'verbose': True, 'workers': 8, 'exist_ok': False, 'fraction': 1, 'momentum': 0.937, 'optimize': False, 'patience': 100, 'save_dir': 'train_VinDr_YOLOv8/04092024_YOLOv8s_subset2', 'save_txt': False, 'simplify': False, 'optimizer': 'auto', 'save_conf': False, 'save_crop': False, 'save_json': False, 'show_conf': True, 'translate': 0.1, 'visualize': False, 'workspace': 4, 'copy_paste': 0, 'line_width': None, 'mask_ratio': 4, 'pretrained': True, 'show_boxes': True, 'single_cls': False, 'vid_stride': 1, 'multi_scale': False, 'perspective': 0, 'save_frames': False, 'save_hybrid': False, 'save_period': -1, 'show_labels': True, 'agnostic_nms': False, 'auto_augment': 'randaugment', 'close_mosaic': 10, 'overlap_mask': True, 'retina_masks': False, 'weight_decay': 0.0005, 'crop_fraction': 1, 'deterministic': True, 'stream_buffer': False, 'warmup_epochs': 3, 'warmup_bias_lr': 0, 'label_smoothing': 0, 'warmup_momentum': 0.8}}, '_wandb': {'desc': None, 'value': {'t': {'1': [1, 55], '2': [1, 41, 55], '3': [13, 16, 19, 23, 47, 61], '4': '3.12.5', '5': '0.17.8', '8': [5], '13': 'linux-x86_64'}, 'framework': 'torch', 'start_time': 1725422898, 'cli_version': '0.17.8', 'is_jupyter_run': False, 'python_version': '3.12.5', 'is_kaggle_kernel': False}}, 'epochs': {'desc': None, 'value': 50}, 'dataset': {'desc': None, 'value': 'FULL_brightnessEQ_VinDr_FIXED_subsetAO-C'}, 'machine': {'desc': None, 'value': 'Thermaltake_2080ti_0'}, 'batch_size': {'desc': None, 'value': 16}, 'image_size': {'desc': None, 'value': 1024}},tags=[])
+2024-09-04 17:15:05,189 INFO    SenderThread:600994 [dir_watcher.py:__init__():211] watching files in: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files
+2024-09-04 17:15:05,189 INFO    SenderThread:600994 [sender.py:_start_run_threads():1200] run started: xkzsr7xu with start time 1725437127.389434
+2024-09-04 17:15:05,191 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: summary_record
+2024-09-04 17:15:05,192 INFO    SenderThread:600994 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 17:15:05,199 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: run_start
+2024-09-04 17:15:05,209 DEBUG   HandlerThread:600994 [system_info.py:__init__():26] System info init
+2024-09-04 17:15:05,209 DEBUG   HandlerThread:600994 [system_info.py:__init__():41] System info init done
+2024-09-04 17:15:05,209 INFO    HandlerThread:600994 [system_monitor.py:start():194] Starting system monitor
+2024-09-04 17:15:05,210 INFO    SystemMonitor:600994 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-04 17:15:05,211 INFO    SystemMonitor:600994 [interfaces.py:start():188] Started cpu monitoring
+2024-09-04 17:15:05,213 INFO    SystemMonitor:600994 [interfaces.py:start():188] Started disk monitoring
+2024-09-04 17:15:05,214 INFO    SystemMonitor:600994 [interfaces.py:start():188] Started gpu monitoring
+2024-09-04 17:15:05,216 INFO    SystemMonitor:600994 [interfaces.py:start():188] Started memory monitoring
+2024-09-04 17:15:05,217 INFO    SystemMonitor:600994 [interfaces.py:start():188] Started network monitoring
+2024-09-04 17:15:05,261 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-04 17:15:05,261 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: python_packages
+2024-09-04 17:15:05,304 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-04 17:15:05,304 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 17:15:05,305 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: stop_status
+2024-09-04 17:15:05,569 DEBUG   SenderThread:600994 [sender.py:send():391] send: telemetry
+2024-09-04 17:15:05,860 DEBUG   SenderThread:600994 [sender.py:send():391] send: exit
+2024-09-04 17:15:05,861 INFO    SenderThread:600994 [sender.py:send_exit():598] handling exit code: 1
+2024-09-04 17:15:05,861 INFO    SenderThread:600994 [sender.py:send_exit():600] handling runtime: 4176
+2024-09-04 17:15:05,862 INFO    SenderThread:600994 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 17:15:05,862 INFO    SenderThread:600994 [sender.py:send_exit():606] send defer
+2024-09-04 17:15:05,862 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:05,863 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-04 17:15:05,863 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:05,863 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-04 17:15:05,863 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 1
+2024-09-04 17:15:05,864 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:05,864 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-04 17:15:05,864 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:05,864 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-04 17:15:05,864 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 2
+2024-09-04 17:15:05,864 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:05,865 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-04 17:15:05,865 INFO    HandlerThread:600994 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-04 17:15:05,865 DEBUG   SystemMonitor:600994 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-04 17:15:05,866 DEBUG   SystemMonitor:600994 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-04 17:15:05,866 DEBUG   SystemMonitor:600994 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-04 17:15:05,866 INFO    HandlerThread:600994 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-04 17:15:05,866 INFO    HandlerThread:600994 [interfaces.py:finish():200] Joined disk monitor
+2024-09-04 17:15:05,968 INFO    HandlerThread:600994 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-04 17:15:05,969 INFO    HandlerThread:600994 [interfaces.py:finish():200] Joined memory monitor
+2024-09-04 17:15:05,969 INFO    HandlerThread:600994 [interfaces.py:finish():200] Joined network monitor
+2024-09-04 17:15:05,969 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:05,969 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-04 17:15:05,970 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 3
+2024-09-04 17:15:05,970 DEBUG   SenderThread:600994 [sender.py:send():391] send: stats
+2024-09-04 17:15:05,970 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:05,970 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-04 17:15:05,970 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:05,970 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-04 17:15:05,970 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 4
+2024-09-04 17:15:05,970 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:05,970 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-04 17:15:05,971 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:05,971 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-04 17:15:05,971 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 5
+2024-09-04 17:15:05,971 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:05,971 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-04 17:15:05,971 DEBUG   SenderThread:600994 [sender.py:send():391] send: summary
+2024-09-04 17:15:05,972 INFO    SenderThread:600994 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-04 17:15:05,972 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:05,972 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-04 17:15:05,972 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 6
+2024-09-04 17:15:05,972 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:05,972 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-04 17:15:05,972 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:05,972 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-04 17:15:05,974 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: status_report
+2024-09-04 17:15:06,191 INFO    Thread-12 :600994 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/output.log
+2024-09-04 17:15:06,192 INFO    Thread-12 :600994 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/requirements.txt
+2024-09-04 17:15:06,192 INFO    Thread-12 :600994 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/wandb-summary.json
+2024-09-04 17:15:06,219 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 7
+2024-09-04 17:15:06,219 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:06,219 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-04 17:15:06,220 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:06,220 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-04 17:15:06,860 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 17:15:07,189 INFO    Thread-12 :600994 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/config.yaml
+2024-09-04 17:15:07,822 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 8
+2024-09-04 17:15:07,822 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 17:15:07,823 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:07,823 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-04 17:15:07,823 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:07,824 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-04 17:15:07,824 INFO    SenderThread:600994 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-04 17:15:07,824 WARNING SenderThread:600994 [job_builder.py:_log_if_verbose():274] Ensure read and write access to run files dir: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files, control this via the WANDB_DIR env var. See https://docs.wandb.ai/guides/track/environment-variables
+2024-09-04 17:15:07,824 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 9
+2024-09-04 17:15:07,824 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:07,824 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-04 17:15:07,825 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:07,825 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-04 17:15:07,825 INFO    SenderThread:600994 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-04 17:15:07,862 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 17:15:08,190 INFO    Thread-12 :600994 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/output.log
+2024-09-04 17:15:08,191 INFO    SenderThread:600994 [dir_watcher.py:finish():388] scan: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files
+2024-09-04 17:15:08,191 INFO    SenderThread:600994 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/requirements.txt requirements.txt
+2024-09-04 17:15:08,191 INFO    SenderThread:600994 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/wandb-summary.json wandb-summary.json
+2024-09-04 17:15:08,195 INFO    SenderThread:600994 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/config.yaml config.yaml
+2024-09-04 17:15:08,196 INFO    SenderThread:600994 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/output.log output.log
+2024-09-04 17:15:08,199 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 10
+2024-09-04 17:15:08,199 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 17:15:08,202 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:08,206 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-04 17:15:08,206 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:08,206 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-04 17:15:08,206 INFO    SenderThread:600994 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-04 17:15:08,862 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 17:15:08,863 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 17:15:09,260 INFO    wandb-upload_0:600994 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/requirements.txt
+2024-09-04 17:15:09,360 INFO    wandb-upload_3:600994 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/output.log
+2024-09-04 17:15:09,370 INFO    wandb-upload_1:600994 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/wandb-summary.json
+2024-09-04 17:15:09,374 INFO    wandb-upload_2:600994 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/files/config.yaml
+2024-09-04 17:15:09,575 INFO    Thread-11 (_thread_body):600994 [sender.py:transition_state():626] send defer: 11
+2024-09-04 17:15:09,575 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:09,576 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-04 17:15:09,576 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:09,576 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-04 17:15:09,576 INFO    SenderThread:600994 [file_pusher.py:join():175] waiting for file pusher
+2024-09-04 17:15:09,577 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 12
+2024-09-04 17:15:09,577 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:09,577 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-04 17:15:09,578 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:09,578 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-04 17:15:09,578 INFO    SenderThread:600994 [file_stream.py:finish():601] file stream finish called
+2024-09-04 17:15:09,864 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 17:15:10,462 INFO    SenderThread:600994 [file_stream.py:finish():605] file stream finish is done
+2024-09-04 17:15:10,462 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 13
+2024-09-04 17:15:10,462 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 17:15:10,463 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:10,463 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-04 17:15:10,463 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:10,464 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-04 17:15:10,464 INFO    SenderThread:600994 [sender.py:transition_state():626] send defer: 14
+2024-09-04 17:15:10,464 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: defer
+2024-09-04 17:15:10,465 DEBUG   SenderThread:600994 [sender.py:send():391] send: final
+2024-09-04 17:15:10,465 INFO    HandlerThread:600994 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-04 17:15:10,465 DEBUG   SenderThread:600994 [sender.py:send():391] send: footer
+2024-09-04 17:15:10,465 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: defer
+2024-09-04 17:15:10,465 INFO    SenderThread:600994 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-04 17:15:10,466 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 17:15:10,467 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 17:15:10,467 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: server_info
+2024-09-04 17:15:10,468 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: server_info
+2024-09-04 17:15:10,469 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-04 17:15:10,470 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-04 17:15:10,471 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-04 17:15:10,471 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-04 17:15:10,699 DEBUG   SenderThread:600994 [sender.py:send_request():418] send_request: poll_exit
+2024-09-04 17:15:10,699 INFO    MainThread:600994 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-09-04 17:15:10,700 INFO    MainThread:600994 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-09-04 17:15:10,700 INFO    MainThread:600994 [wandb_run.py:_footer_sync_info():4037] logging synced files
+2024-09-04 17:15:10,701 DEBUG   HandlerThread:600994 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-04 17:15:10,701 INFO    HandlerThread:600994 [handler.py:finish():884] shutting down handler
+2024-09-04 17:15:11,470 INFO    WriterThread:600994 [datastore.py:close():296] close: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240904_171504-xkzsr7xu/run-xkzsr7xu.wandb
+2024-09-04 17:15:11,699 INFO    SenderThread:600994 [sender.py:finish():1631] shutting down sender
+2024-09-04 17:15:11,699 INFO    SenderThread:600994 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-04 17:15:11,699 INFO    SenderThread:600994 [file_pusher.py:join():175] waiting for file pusher
