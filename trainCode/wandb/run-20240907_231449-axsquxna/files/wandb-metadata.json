@@ -1,0 +1,49 @@
+{
+  "os": "Linux-6.5.0-28-generic-x86_64-with-glibc2.35",
+  "python": "3.12.5",
+  "startedAt": "2024-09-07T15:14:49.951849Z",
+  "program": "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/train.py",
+  "codePath": "trainCode/train.py",
+  "git": {
+    "remote": "https://github.com/kaichenchai/VinDr_YOLOv8/",
+    "commit": "cbcf03761bcfd1c3c029ab0fc2a6b3b075751c5a"
+  },
+  "email": "englishorc65@gmail.com",
+  "root": "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode",
+  "host": "thermaltake",
+  "username": "kai",
+  "executable": "/home/kai/miniconda3/envs/yolov8/bin/python3",
+  "codePathLocal": "train.py",
+  "cpu_count": 10,
+  "cpu_count_logical": 20,
+  "gpu": "[NVIDIA GeForce RTX 2080 Ti, NVIDIA GeForce RTX 2080 Ti]",
+  "gpu_count": 2,
+  "disk": {
+    "/": {
+      "total": "4030801100800",
+      "used": "383587053568"
+    }
+  },
+  "memory": {
+    "total": "67075624960"
+  },
+  "cpu": {
+    "count": 10,
+    "countLogical": 20
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 2080 Ti",
+      "memoryTotal": "11811160064",
+      "cudaCores": 4352,
+      "architecture": "Turing"
+    },
+    {
+      "name": "NVIDIA GeForce RTX 2080 Ti",
+      "memoryTotal": "11811160064",
+      "cudaCores": 4352,
+      "architecture": "Turing"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

@@ -27,11 +27,9 @@ metrics = model.val(project = "train_VinDr_YOLOv8",
             name = "200824_YOLOv8s_brightnessEQ_FIXED_FIXEDBB_VAL",
             imgsz = 1024,
             plots = True,
-            batch = 16,
+            ba`tch = 16,
             save_json = True,
-            device=[0])
-
-
+            device=[0, 1])
 
 #finishing run
 wandb.finish()
