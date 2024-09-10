@@ -53,10 +53,12 @@ def makeLabelsSetDim(labelsDir, outputDir, dim, classDict):
         with open(txtFilePath, "a") as file:
             file.write(f"{classNum} {x_center_norm} {y_center_norm} {x_width_norm} {y_height_norm}\n")
             
-if __name__ == "__main__":
-        
+if __name__ == "__main__":        
     print("Making training set")
     makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/kaggleTrain.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
     print("Making testing set")
-    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/kaggleTest.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
+    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/kaggleTest.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/test", (1024, 1024), classesDict)
+    print("Making validation set")
+    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/kaggleVal.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
+    print("All done!")
 

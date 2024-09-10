@@ -1,0 +1,43 @@
+Ultralytics YOLOv8.2.80 🚀 Python-3.12.5 torch-2.4.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+                                                     CUDA:1 (NVIDIA GeForce RTX 2080 Ti, 11004MiB)
+Model summary (fused): 218 layers, 25,847,866 parameters, 0 gradients, 78.7 GFLOPs
+Traceback (most recent call last):
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/data/base.py", line 104, in get_img_files
+    p = Path(p)  # os-agnostic
+        ^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/pathlib.py", line 1162, in __init__
+    super().__init__(*args)
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/pathlib.py", line 373, in __init__
+    raise TypeError(
+TypeError: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'NoneType'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/validation.py", line 25, in <module>
+    metrics = model.val(project = "train_VinDr_YOLOv8",
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/model.py", line 646, in val
+    validator(model=self.model)
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/validator.py", line 154, in __call__
+    self.dataloader = self.dataloader or self.get_dataloader(self.data.get(self.args.split), self.args.batch)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/models/yolo/detect/val.py", line 243, in get_dataloader
+    dataset = self.build_dataset(dataset_path, batch=batch_size, mode="val")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/models/yolo/detect/val.py", line 239, in build_dataset
+    return build_yolo_dataset(self.args, img_path, batch, self.data, mode=mode, stride=self.stride)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/data/build.py", line 87, in build_yolo_dataset
+    return dataset(
+           ^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/data/dataset.py", line 65, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/data/base.py", line 73, in __init__
+    self.im_files = self.get_img_files(self.img_path)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/data/base.py", line 120, in get_img_files
+    raise FileNotFoundError(f"{self.prefix}Error loading data from {img_path}\n{HELP_URL}") from e
+FileNotFoundError: [34m[1mval: [39m[22mError loading data from None
+See https://docs.ultralytics.com/datasets for dataset formatting guidance.
