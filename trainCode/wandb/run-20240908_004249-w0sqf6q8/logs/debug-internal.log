@@ -1,0 +1,20 @@
+{"time":"2024-09-08T00:42:49.02651677+08:00","level":"INFO","msg":"using version","core version":"0.17.8"}
+{"time":"2024-09-08T00:42:49.026562065+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240908_004249-w0sqf6q8/logs/debug-core.log"}
+{"time":"2024-09-08T00:42:49.02667793+08:00","level":"INFO","msg":"using version","core version":"0.17.8"}
+{"time":"2024-09-08T00:42:49.02669+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240908_004249-w0sqf6q8/logs/debug-core.log"}
+{"time":"2024-09-08T00:42:49.030005835+08:00","level":"INFO","msg":"created new stream","id":"w0sqf6q8"}
+{"time":"2024-09-08T00:42:49.030027973+08:00","level":"INFO","msg":"stream: started","id":"w0sqf6q8"}
+{"time":"2024-09-08T00:42:49.030059198+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"w0sqf6q8"}}
+{"time":"2024-09-08T00:42:49.030113323+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"w0sqf6q8"}}
+{"time":"2024-09-08T00:42:49.030052041+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"w0sqf6q8"}}
+{"time":"2024-09-08T00:42:49.478943398+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-08T00:42:49.481124971+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-08T04:35:27.650127819+08:00","level":"INFO","msg":"stream: closing","id":"w0sqf6q8"}
+{"time":"2024-09-08T04:35:27.650272582+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-08T04:35:27.650374151+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-08T04:35:27.906780478+08:00","level":"WARN","msg":"No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job"}
+{"time":"2024-09-08T04:35:27.906807904+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-09-08T04:35:29.153658132+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"w0sqf6q8"}}
+{"time":"2024-09-08T04:35:29.153706721+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"w0sqf6q8"}}
+{"time":"2024-09-08T04:35:29.153780006+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"w0sqf6q8"}}
+{"time":"2024-09-08T04:35:29.153917794+08:00","level":"INFO","msg":"stream: closed","id":"w0sqf6q8"}

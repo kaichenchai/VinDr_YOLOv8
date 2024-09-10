@@ -1,0 +1,23 @@
+{"time":"2024-09-10T00:06:35.059950265+08:00","level":"INFO","msg":"using version","core version":"0.17.8"}
+{"time":"2024-09-10T00:06:35.0599854+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240910_000635-bnotzbe6/logs/debug-core.log"}
+{"time":"2024-09-10T00:06:35.060087054+08:00","level":"INFO","msg":"using version","core version":"0.17.8"}
+{"time":"2024-09-10T00:06:35.060100031+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240910_000635-bnotzbe6/logs/debug-core.log"}
+{"time":"2024-09-10T00:06:35.064127246+08:00","level":"INFO","msg":"created new stream","id":"bnotzbe6"}
+{"time":"2024-09-10T00:06:35.064162454+08:00","level":"INFO","msg":"stream: started","id":"bnotzbe6"}
+{"time":"2024-09-10T00:06:35.064182518+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"bnotzbe6"}}
+{"time":"2024-09-10T00:06:35.064264143+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"bnotzbe6"}}
+{"time":"2024-09-10T00:06:35.064350528+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"bnotzbe6"}}
+{"time":"2024-09-10T00:06:35.603513855+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-10T00:06:35.605610592+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-10T01:23:06.577944065+08:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/kaichenchai/train_VinDr_YOLOv8/bnotzbe6/file_stream"}
+{"time":"2024-09-10T01:29:09.458047275+08:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/kaichenchai/train_VinDr_YOLOv8/bnotzbe6/file_stream"}
+{"time":"2024-09-10T04:00:15.729129438+08:00","level":"INFO","msg":"sender: getServerInfo: got server info","serverInfo":{"cliVersionInfo":{"max_cli_version":"0.17.8","min_cli_version":"0.8.20"},"latestLocalVersionInfo":null}}
+{"time":"2024-09-10T04:00:15.730443103+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-10T04:00:15.730646199+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-10T04:00:16.006244621+08:00","level":"WARN","msg":"No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job"}
+{"time":"2024-09-10T04:00:16.006279419+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-09-10T04:00:18.349214783+08:00","level":"INFO","msg":"stream: closing","id":"bnotzbe6"}
+{"time":"2024-09-10T04:00:18.349248226+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"bnotzbe6"}}
+{"time":"2024-09-10T04:00:18.349273442+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"bnotzbe6"}}
+{"time":"2024-09-10T04:00:18.349340187+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"bnotzbe6"}}
+{"time":"2024-09-10T04:00:18.349405121+08:00","level":"INFO","msg":"stream: closed","id":"bnotzbe6"}
