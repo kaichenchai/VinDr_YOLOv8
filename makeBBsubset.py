@@ -47,14 +47,15 @@ def makeLabelsSetDim(labelsDir, outputDir, dim, classDict):
 
 if __name__ == "__main__":
     classesDict = {
-    "Aortic enlargement":0,
-    "Cardiomegaly":1,
+    "Cardiomegaly":0,
     }
     
     #removeObs("FULL_1024_PAD_annotations/anno_train.csv", classesDict, "train.csv")
     #removeObs("FULL_1024_PAD_annotations/anno_test.csv", classesDict, "test.csv")
     print("Making train")
-    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/mergedSubsetTrain.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
+    makeLabelsSetDim("train.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
+    print("Making val")
+    makeLabelsSetDim("val.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
     print("Making test")
-    makeLabelsSetDim("/mnt/data/kai/VinDr_datasets/FULL_1024_PAD_annotations/mergedSubsetTest.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
+    makeLabelsSetDim("test.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/test", (1024, 1024), classesDict)
 
