@@ -53,9 +53,9 @@ if __name__ == "__main__":
     #removeObs("FULL_1024_PAD_annotations/anno_train.csv", classesDict, "train.csv")
     #removeObs("FULL_1024_PAD_annotations/anno_test.csv", classesDict, "test.csv")
     print("Making train")
-    makeLabelsSetDim("train.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
+    makeLabelsSetDim("mergedTrain.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
     print("Making val")
-    makeLabelsSetDim("val.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
+    makeLabelsSetDim("mergedVal.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
     print("Making test")
-    makeLabelsSetDim("test.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/test", (1024, 1024), classesDict)
+    makeLabelsSetDim("mergedTest.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/test", (1024, 1024), classesDict)
 

@@ -1,0 +1,11 @@
+{"time":"2024-09-12T23:04:30.843507656+08:00","level":"INFO","msg":"using version","core version":"0.17.8"}
+{"time":"2024-09-12T23:04:30.843524575+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240912_230430-52xfxm71/logs/debug-core.log"}
+{"time":"2024-09-12T23:04:30.843567807+08:00","level":"INFO","msg":"using version","core version":"0.17.8"}
+{"time":"2024-09-12T23:04:30.843571087+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240912_230430-52xfxm71/logs/debug-core.log"}
+{"time":"2024-09-12T23:04:30.845508568+08:00","level":"INFO","msg":"created new stream","id":"52xfxm71"}
+{"time":"2024-09-12T23:04:30.845524596+08:00","level":"INFO","msg":"stream: started","id":"52xfxm71"}
+{"time":"2024-09-12T23:04:30.845552748+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"52xfxm71"}}
+{"time":"2024-09-12T23:04:30.845617304+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"52xfxm71"}}
+{"time":"2024-09-12T23:04:30.845604444+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"52xfxm71"}}
+{"time":"2024-09-12T23:04:31.302283315+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-12T23:04:31.30449344+08:00","level":"INFO","msg":"Starting system monitor"}
