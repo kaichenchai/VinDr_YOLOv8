@@ -1,0 +1,25 @@
+Overriding model.yaml nc=80 with nc=1
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [0mchecks passed ✅
+/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py:271: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.amp)
+[34m[1mtrain: [0mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train... 0 images, 12000 backgrounds, 0 corrupt: 100%|██████████| 12000/12000 [00:04<00:00, 2736.15it/s]
+[34m[1mtrain: [0mWARNING ⚠️ No labels found in /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train.cache. See https://docs.ultralytics.com/datasets for dataset formatting guidance.
+[34m[1mtrain: [0mNew cache created: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train.cache
+WARNING ⚠️ No labels found in /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train.cache, training may not work correctly. See https://docs.ultralytics.com/datasets for dataset formatting guidance.
+[34m[1mval: [0mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val... 0 images, 3000 backgrounds, 0 corrupt: 100%|██████████| 3000/3000 [00:01<00:00, 1752.19it/s]
+[34m[1mval: [0mWARNING ⚠️ No labels found in /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val.cache. See https://docs.ultralytics.com/datasets for dataset formatting guidance.
+[34m[1mval: [0mNew cache created: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val.cache
+WARNING ⚠️ No labels found in /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val.cache, training may not work correctly. See https://docs.ultralytics.com/datasets for dataset formatting guidance.
+Plotting labels to train_VinDr_YOLOv8/16092024_YOLOv8m_subset-C-merged/labels.jpg...
+zero-size array to reduction operation maximum which has no identity
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[0m AdamW(lr=0.000714, momentum=0.9) with parameter groups 77 weight(decay=0.0), 84 weight(decay=0.0005), 83 bias(decay=0.0)
+Image sizes 1024 train, 1024 val
+Using 16 dataloader workers
+Logging results to [1mtrain_VinDr_YOLOv8/16092024_YOLOv8m_subset-C-merged[0m
+Starting training for 50 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       1/50      8.34G          0      47.16          0          0       1024:  89%|████████▉ | 670/750 [03:31<00:24,  3.25it/s]

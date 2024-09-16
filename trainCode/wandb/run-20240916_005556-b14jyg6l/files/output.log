@@ -1,0 +1,122 @@
+Overriding model.yaml nc=80 with nc=1
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [0mchecks passed ✅
+/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py:271: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  self.scaler = torch.cuda.amp.GradScaler(enabled=self.amp)
+[34m[1mtrain: [0mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train.cache... 1853 images, 10147 backgrounds, 0 corrupt: 100%|██████████| 12000/12000 [00:00<?, ?it/s]
+[34m[1mval: [0mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val.cache... 463 images, 2537 backgrounds, 0 corrupt: 100%|██████████| 3000/3000 [00:00<?, ?it/s]
+Plotting labels to train_VinDr_YOLOv8/16092024_YOLOv8m_subset-C-merged/labels.jpg...
+[34m[1moptimizer:[0m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[0m AdamW(lr=0.000714, momentum=0.9) with parameter groups 77 weight(decay=0.0), 84 weight(decay=0.0005), 83 bias(decay=0.0)
+Image sizes 1024 train, 1024 val
+Using 16 dataloader workers
+Logging results to [1mtrain_VinDr_YOLOv8/16092024_YOLOv8m_subset-C-merged[0m
+Starting training for 50 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/750 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/kai/.config/Ultralytics/DDP/_temp_jd8ef6ed133488175419456.py", line 13, in <module>
+    results = trainer.train()
+              ^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 208, in train
+    self._do_train(world_size)
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 385, in _do_train
+    self.loss, self.loss_items = self.model(batch)
+                                 ^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 101, in forward
+    return self.loss(x, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 282, in loss
+    preds = self.forward(batch["img"]) if preds is None else preds
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 102, in forward
+    return self.predict(x, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 120, in predict
+    return self._predict_once(x, profile, visualize, embed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 141, in _predict_once
+    x = m(x)  # run
+        ^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/modules/block.py", line 240, in forward
+    return self.cv2(torch.cat(y, 1))
+                    ^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 10.75 GiB of which 18.62 MiB is free. Process 1990791 has 8.13 GiB memory in use. Including non-PyTorch memory, this process has 2.59 GiB memory in use. Of the allocated memory 2.15 GiB is allocated by PyTorch, and 80.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/kai/.config/Ultralytics/DDP/_temp_jd8ef6ed133488175419456.py", line 13, in <module>
+[rank0]:     results = trainer.train()
+[rank0]:               ^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 208, in train
+[rank0]:     self._do_train(world_size)
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 385, in _do_train
+[rank0]:     self.loss, self.loss_items = self.model(batch)
+[rank0]:                                  ^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1636, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/parallel/distributed.py", line 1454, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 101, in forward
+[rank0]:     return self.loss(x, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 282, in loss
+[rank0]:     preds = self.forward(batch["img"]) if preds is None else preds
+[rank0]:             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 102, in forward
+[rank0]:     return self.predict(x, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 120, in predict
+[rank0]:     return self._predict_once(x, profile, visualize, embed)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/tasks.py", line 141, in _predict_once
+[rank0]:     x = m(x)  # run
+[rank0]:         ^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/nn/modules/block.py", line 240, in forward
+[rank0]:     return self.cv2(torch.cat(y, 1))
+[rank0]:                     ^^^^^^^^^^^^^^^
+[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 10.75 GiB of which 18.62 MiB is free. Process 1990791 has 8.13 GiB memory in use. Including non-PyTorch memory, this process has 2.59 GiB memory in use. Of the allocated memory 2.15 GiB is allocated by PyTorch, and 80.93 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

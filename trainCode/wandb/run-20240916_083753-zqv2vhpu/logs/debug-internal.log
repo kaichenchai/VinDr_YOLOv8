@@ -1,0 +1,21 @@
+{"time":"2024-09-16T08:37:53.029895948+08:00","level":"INFO","msg":"using version","core version":"0.17.8"}
+{"time":"2024-09-16T08:37:53.029932447+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240916_083753-zqv2vhpu/logs/debug-core.log"}
+{"time":"2024-09-16T08:37:53.030037287+08:00","level":"INFO","msg":"using version","core version":"0.17.8"}
+{"time":"2024-09-16T08:37:53.03004806+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240916_083753-zqv2vhpu/logs/debug-core.log"}
+{"time":"2024-09-16T08:37:53.034508812+08:00","level":"INFO","msg":"created new stream","id":"zqv2vhpu"}
+{"time":"2024-09-16T08:37:53.034529042+08:00","level":"INFO","msg":"stream: started","id":"zqv2vhpu"}
+{"time":"2024-09-16T08:37:53.03455623+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"zqv2vhpu"}}
+{"time":"2024-09-16T08:37:53.034569309+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"zqv2vhpu"}}
+{"time":"2024-09-16T08:37:53.034648225+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"zqv2vhpu"}}
+{"time":"2024-09-16T08:37:53.476589524+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2024-09-16T08:37:53.479057822+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-09-16T12:38:46.079205132+08:00","level":"INFO","msg":"sender: getServerInfo: got server info","serverInfo":{"cliVersionInfo":{"max_cli_version":"0.17.8","min_cli_version":"0.8.20"},"latestLocalVersionInfo":null}}
+{"time":"2024-09-16T12:38:46.080692782+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-09-16T12:38:46.08093344+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-09-16T12:38:46.33869462+08:00","level":"WARN","msg":"No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job"}
+{"time":"2024-09-16T12:38:46.338749756+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2024-09-16T12:38:49.099869969+08:00","level":"INFO","msg":"stream: closing","id":"zqv2vhpu"}
+{"time":"2024-09-16T12:38:49.099905877+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"zqv2vhpu"}}
+{"time":"2024-09-16T12:38:49.099935046+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"zqv2vhpu"}}
+{"time":"2024-09-16T12:38:49.099963927+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"zqv2vhpu"}}
+{"time":"2024-09-16T12:38:49.100046584+08:00","level":"INFO","msg":"stream: closed","id":"zqv2vhpu"}

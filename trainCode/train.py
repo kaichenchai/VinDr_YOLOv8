@@ -5,9 +5,8 @@ import wandb
 wandb.require("core")
 
 # Step 2: Define the YOLOv8 Model and Dataset
-model_name = "yolov8m"
 dataset_name = "subset.yaml"
-model = YOLO(f"{model_name}.pt")
+model = YOLO("yolov8m.yaml")
 
 
 # Step 3: Add W&B Callback for Ultralytics
@@ -17,9 +16,9 @@ add_wandb_callback(model, enable_model_checkpointing=True)
 # Step 4: Train and Fine-Tune the Model
 model.train(project = "train_VinDr_YOLOv8",
             data = dataset_name,
-            name = "12092024_YOLOv8m_subset-C-merged",
+            name = "16092024_YOLOv8m_subset-C-merged",
             epochs = 50,
-            batch = 16,
+            batch = 12,
             imgsz = 1024,
             plots = True,
             device=[0, 1]

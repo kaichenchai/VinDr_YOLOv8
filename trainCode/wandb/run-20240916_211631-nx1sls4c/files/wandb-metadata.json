@@ -1,0 +1,152 @@
+{
+    "os": "Linux-6.5.0-28-generic-x86_64-with-glibc2.35",
+    "python": "3.12.5",
+    "heartbeatAt": "2024-09-16T13:16:32.069297",
+    "startedAt": "2024-09-16T13:16:31.338959",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/validation.py",
+    "codePathLocal": "validation.py",
+    "codePath": "trainCode/validation.py",
+    "git": {
+        "remote": "https://github.com/kaichenchai/VinDr_YOLOv8/",
+        "commit": "150c5d19dad052c836142035e0a924fc3baa4158"
+    },
+    "email": "englishorc65@gmail.com",
+    "root": "/mnt/data/kai/VinDr_YOLOv8_experiments",
+    "host": "thermaltake",
+    "username": "kai",
+    "executable": "/home/kai/miniconda3/envs/yolov8/bin/python3",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 3709.8586000000005,
+        "min": 1200.0,
+        "max": 4120.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4000.001,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3800.004,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.0,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3437.477,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3799.997,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3299.998,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3799.997,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3850.443,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3800.75,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3999.999,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3799.999,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3800.001,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3660.123,
+            "min": 1200.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3799.995,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3800.0,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3300.001,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3799.996,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3850.49,
+            "min": 1200.0,
+            "max": 4100.0
+        },
+        {
+            "current": 3800.003,
+            "min": 1200.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 3753.976058959961,
+            "used": 357.7971992492676
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 2080 Ti",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        },
+        {
+            "name": "NVIDIA GeForce RTX 2080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 62.46904373168945
+    }
+}

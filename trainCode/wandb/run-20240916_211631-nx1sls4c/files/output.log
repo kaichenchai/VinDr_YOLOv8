@@ -1,0 +1,213 @@
+Ultralytics YOLOv8.2.80 🚀 Python-3.12.5 torch-2.4.0 CPU (Intel Core(TM) i9-9820X 3.30GHz)
+YOLOv8m summary (fused): 218 layers, 25,840,339 parameters, 0 gradients, 78.7 GFLOPs
+[34m[1mval: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/test.cache... 309 images, 26
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 188/188 [36:45<00:0
+                   all       3000        309      0.658      0.754      0.779      0.404
+Ultralytics YOLOv8.2.80 🚀 Python-3.12.5 torch-2.4.0 CPU (Intel Core(TM) i9-9820X 3.30GHz)
+YOLOv8m summary (fused): 218 layers, 25,840,339 parameters, 0 gradients, 78.7 GFLOPs
+Generating Visualizations for batch-1/1:   0%|                                                         | 0/16 [00:00<?, ?it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd63afac528fb70393d1ca8f442427c4.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   6%|███                                              | 1/16 [00:00<00:05,  2.79it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd6b274f9e2ef0f660d52ed947e58ac3.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  12%|██████▏                                          | 2/16 [00:00<00:04,  3.15it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fdb8f8b25494dfa7024c24e61a56edb4.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  25%|████████████▎                                    | 4/16 [00:01<00:03,  3.19it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fdd767c47adfda2c9fa48f5da76bc306.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  31%|███████████████▎                                 | 5/16 [00:01<00:03,  3.20it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fdd95f330fd8f4f38dd7a2ba61efc281.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  38%|██████████████████▍                              | 6/16 [00:01<00:02,  3.34it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fdf3edb12e482493b9698d76dced9395.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  44%|█████████████████████▍                           | 7/16 [00:02<00:02,  3.52it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fdf93ea409b0d2e4a8a1ba885caa59e4.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  50%|████████████████████████▌                        | 8/16 [00:02<00:02,  3.64it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd1952a0bbb148711493e3fd73ba1160.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  56%|███████████████████████████▌                     | 9/16 [00:02<00:01,  3.69it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd2e07088ff35c77448f636ad1816039.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  62%|██████████████████████████████                  | 10/16 [00:02<00:01,  3.50it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd2e0ef3254e46ba1716bcd5e885f355.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  69%|█████████████████████████████████               | 11/16 [00:03<00:01,  3.45it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd332164e7924efb4e11f3186bc8fa4d.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  75%|████████████████████████████████████            | 12/16 [00:03<00:01,  3.35it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd3f2abb3ba1d00026654a220d53d9bb.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  81%|███████████████████████████████████████         | 13/16 [00:03<00:00,  3.36it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd4b7dcfd91bdd1a5b51e96e6e0fe931.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|██████████████████████████████████████████      | 14/16 [00:04<00:00,  3.37it/s][34m[1mwandb[39m[22m: [33mWARNING[39m Image: /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/images/test/fd536e3e8f6f2336f27c76360c183b72.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|████████████████████████████████████████████████| 16/16 [00:04<00:00,  3.37it/s]
+Speed: 4.1ms preprocess, 713.8ms inference, 0.0ms loss, 0.6ms postprocess per image
+Saving train_VinDr_YOLOv8/16092024_YOLOv8m_subset-C-merged_VAL1DET/predictions.json...
+Results saved to [1mtrain_VinDr_YOLOv8/16092024_YOLOv8m_subset-C-merged_VAL1DET
