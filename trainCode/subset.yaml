@@ -5,4 +5,4 @@ test: images/test
 
 
 names:
-    0: Cardiomegaly
+    0: "Aortic enlargement"
