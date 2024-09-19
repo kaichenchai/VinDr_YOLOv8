@@ -1,0 +1,272 @@
+2024-09-19 17:23:43,855 INFO    StreamThr :2973661 [internal.py:wandb_internal():85] W&B internal server running at pid: 2973661, started at: 2024-09-19 17:23:43.854926
+2024-09-19 17:23:43,859 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status
+2024-09-19 17:23:43,863 INFO    WriterThread:2973661 [datastore.py:open_for_write():87] open: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/run-2dlpju7f.wandb
+2024-09-19 17:23:43,864 DEBUG   SenderThread:2973661 [sender.py:send():391] send: header
+2024-09-19 17:23:43,864 DEBUG   SenderThread:2973661 [sender.py:send():391] send: run
+2024-09-19 17:23:44,501 INFO    SenderThread:2973661 [dir_watcher.py:__init__():211] watching files in: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files
+2024-09-19 17:23:44,501 INFO    SenderThread:2973661 [sender.py:_start_run_threads():1200] run started: 2dlpju7f with start time 1726737823.854106
+2024-09-19 17:23:44,516 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: run_start
+2024-09-19 17:23:44,529 DEBUG   HandlerThread:2973661 [system_info.py:__init__():26] System info init
+2024-09-19 17:23:44,529 DEBUG   HandlerThread:2973661 [system_info.py:__init__():41] System info init done
+2024-09-19 17:23:44,529 INFO    HandlerThread:2973661 [system_monitor.py:start():194] Starting system monitor
+2024-09-19 17:23:44,529 INFO    SystemMonitor:2973661 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-19 17:23:44,529 INFO    HandlerThread:2973661 [system_monitor.py:probe():214] Collecting system info
+2024-09-19 17:23:44,531 INFO    SystemMonitor:2973661 [interfaces.py:start():188] Started cpu monitoring
+2024-09-19 17:23:44,532 INFO    SystemMonitor:2973661 [interfaces.py:start():188] Started disk monitoring
+2024-09-19 17:23:44,533 INFO    SystemMonitor:2973661 [interfaces.py:start():188] Started gpu monitoring
+2024-09-19 17:23:44,533 INFO    SystemMonitor:2973661 [interfaces.py:start():188] Started memory monitoring
+2024-09-19 17:23:44,535 INFO    SystemMonitor:2973661 [interfaces.py:start():188] Started network monitoring
+2024-09-19 17:23:44,550 DEBUG   HandlerThread:2973661 [system_info.py:probe():152] Probing system
+2024-09-19 17:23:44,553 DEBUG   HandlerThread:2973661 [system_info.py:_probe_git():137] Probing git
+2024-09-19 17:23:44,561 DEBUG   HandlerThread:2973661 [system_info.py:_probe_git():145] Probing git done
+2024-09-19 17:23:44,561 DEBUG   HandlerThread:2973661 [system_info.py:probe():200] Probing system done
+2024-09-19 17:23:44,561 DEBUG   HandlerThread:2973661 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-28-generic-x86_64-with-glibc2.35', 'python': '3.12.5', 'heartbeatAt': '2024-09-19T09:23:44.550249', 'startedAt': '2024-09-19T09:23:43.846624', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/validation.py', 'codePathLocal': 'validation.py', 'codePath': 'trainCode/validation.py', 'git': {'remote': 'https://github.com/kaichenchai/VinDr_YOLOv8/', 'commit': '150c5d19dad052c836142035e0a924fc3baa4158'}, 'email': 'englishorc65@gmail.com', 'root': '/mnt/data/kai/VinDr_YOLOv8_experiments', 'host': 'thermaltake', 'username': 'kai', 'executable': '/home/kai/miniconda3/envs/yolov8/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1866.7809999999997, 'min': 1200.0, 'max': 4120.0}, 'cpu_freq_per_core': [{'current': 3798.352, 'min': 1200.0, 'max': 4100.0}, {'current': 3999.993, 'min': 1200.0, 'max': 4100.0}, {'current': 1666.547, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4200.0}, {'current': 1900.939, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.299, 'min': 1200.0, 'max': 4100.0}, {'current': 3394.701, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.136, 'min': 1200.0, 'max': 4100.0}, {'current': 3406.008, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4200.0}, {'current': 3536.124, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 3389.773, 'min': 1200.0, 'max': 4100.0}, {'current': 1500.002, 'min': 1200.0, 'max': 4200.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4100.0}, {'current': 4000.735, 'min': 1200.0, 'max': 4200.0}], 'disk': {'/': {'total': 3753.976058959961, 'used': 368.92383193969727}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 62.46904373168945}}
+2024-09-19 17:23:44,561 INFO    HandlerThread:2973661 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-19 17:23:44,561 INFO    HandlerThread:2973661 [system_monitor.py:probe():227] Publishing system info
+2024-09-19 17:23:44,561 DEBUG   HandlerThread:2973661 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-19 17:23:45,503 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/conda-environment.yaml
+2024-09-19 17:23:45,929 DEBUG   HandlerThread:2973661 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-19 17:23:45,930 INFO    HandlerThread:2973661 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-19 17:23:45,934 DEBUG   SenderThread:2973661 [sender.py:send():391] send: files
+2024-09-19 17:23:45,934 INFO    SenderThread:2973661 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-19 17:23:45,988 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-19 17:23:45,988 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: python_packages
+2024-09-19 17:23:45,988 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-19 17:23:45,989 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: stop_status
+2024-09-19 17:23:45,991 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-19 17:23:46,433 DEBUG   SenderThread:2973661 [sender.py:send():391] send: telemetry
+2024-09-19 17:23:46,502 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/conda-environment.yaml
+2024-09-19 17:23:46,502 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:23:46,502 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/requirements.txt
+2024-09-19 17:23:46,503 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/wandb-metadata.json
+2024-09-19 17:23:46,964 INFO    wandb-upload_0:2973661 [upload_job.py:push():130] Uploaded file /tmp/tmpob_nynpvwandb/e4mnmd62-wandb-metadata.json
+2024-09-19 17:23:47,639 DEBUG   SenderThread:2973661 [sender.py:send():391] send: telemetry
+2024-09-19 17:23:48,502 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:23:49,102 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:23:49,503 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:23:51,504 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:23:53,505 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:23:54,248 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:23:55,505 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:23:55,989 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-19 17:23:57,506 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:23:59,316 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:23:59,507 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:00,991 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-19 17:24:00,992 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: stop_status
+2024-09-19 17:24:01,508 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:03,509 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:04,373 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:05,510 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:05,989 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-19 17:24:07,511 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:09,439 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:09,512 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:11,513 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:13,514 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:14,512 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:15,514 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/config.yaml
+2024-09-19 17:24:15,515 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:15,989 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-19 17:24:15,989 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: stop_status
+2024-09-19 17:24:15,992 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-19 17:24:17,515 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:19,516 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:19,897 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:21,517 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:23,518 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:24,979 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:25,519 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:25,990 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-19 17:24:27,519 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:29,520 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:30,048 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:30,989 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-19 17:24:30,990 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: stop_status
+2024-09-19 17:24:31,521 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:33,522 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:35,116 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:35,523 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:35,990 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-19 17:24:37,524 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:39,525 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:40,181 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:41,526 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:43,526 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:44,536 DEBUG   SystemMonitor:2973661 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-19 17:24:44,538 DEBUG   SenderThread:2973661 [sender.py:send():391] send: stats
+2024-09-19 17:24:45,366 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:45,527 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:45,989 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-19 17:24:45,989 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: stop_status
+2024-09-19 17:24:45,991 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-19 17:24:47,528 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:49,529 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:50,529 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:50,571 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:24:52,530 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:53,531 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:55,192 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: log_artifact
+2024-09-19 17:24:55,192 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: log_artifact
+2024-09-19 17:24:55,532 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:55,532 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/media/table/Validation-Table_0_8dfa6f15a19dad38cfc8.table.json
+2024-09-19 17:24:55,533 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/media/table
+2024-09-19 17:24:55,533 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/media
+2024-09-19 17:24:55,772 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-19 17:24:55,794 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: check_version
+2024-09-19 17:24:56,149 INFO    wandb-upload_0:2973661 [upload_job.py:push():130] Uploaded file /tmp/tmpob_nynpvwandb/j7349w23-media/table/Validation-Table_0_8dfa6f15a19dad38cfc8.table.json
+2024-09-19 17:24:57,394 INFO    wandb-upload_0:2973661 [upload_job.py:push():88] Uploaded file /home/kai/.local/share/wandb/artifacts/staging/tmpo5cig9yq
+2024-09-19 17:24:57,533 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:24:57,584 INFO    wandb-upload_1:2973661 [upload_job.py:push():88] Uploaded file /home/kai/.local/share/wandb/artifacts/staging/tmpq79ulmv2
+2024-09-19 17:24:58,794 INFO    wandb-upload_3:2973661 [upload_job.py:push():88] Uploaded file /home/kai/.local/share/wandb/artifacts/staging/tmpddzjhon3
+2024-09-19 17:24:59,204 INFO    wandb-upload_2:2973661 [upload_job.py:push():88] Uploaded file /home/kai/.local/share/wandb/artifacts/staging/tmponhujt9q
+2024-09-19 17:25:00,260 INFO    SenderThread:2973661 [sender.py:send_request_log_artifact():1537] logged artifact run-2dlpju7f-ValidationTable - {'id': 'QXJ0aWZhY3Q6MTIzNTkzODYwNA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ1ODA2NzQ4OA==', 'latestArtifact': None}}
+2024-09-19 17:25:00,260 DEBUG   SenderThread:2973661 [sender.py:send():391] send: files
+2024-09-19 17:25:00,261 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:25:00,261 INFO    SenderThread:2973661 [sender.py:_save_file():1466] saving file media/table/Validation-Table_0_8dfa6f15a19dad38cfc8.table.json with policy now
+2024-09-19 17:25:00,262 DEBUG   SenderThread:2973661 [sender.py:send():391] send: telemetry
+2024-09-19 17:25:00,262 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: check_version
+2024-09-19 17:25:00,284 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: server_info
+2024-09-19 17:25:00,284 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: server_info
+2024-09-19 17:25:00,524 DEBUG   SenderThread:2973661 [sender.py:send():391] send: exit
+2024-09-19 17:25:00,524 INFO    SenderThread:2973661 [sender.py:send_exit():598] handling exit code: 0
+2024-09-19 17:25:00,524 INFO    SenderThread:2973661 [sender.py:send_exit():600] handling runtime: 76
+2024-09-19 17:25:00,525 INFO    SenderThread:2973661 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-19 17:25:00,525 INFO    SenderThread:2973661 [sender.py:send_exit():606] send defer
+2024-09-19 17:25:00,525 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:00,525 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 0
+2024-09-19 17:25:00,525 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:00,526 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-09-19 17:25:00,526 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 1
+2024-09-19 17:25:00,526 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:00,526 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 1
+2024-09-19 17:25:00,526 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:00,526 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-09-19 17:25:00,526 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 2
+2024-09-19 17:25:00,526 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:00,526 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 2
+2024-09-19 17:25:00,526 INFO    HandlerThread:2973661 [system_monitor.py:finish():203] Stopping system monitor
+2024-09-19 17:25:00,527 DEBUG   SystemMonitor:2973661 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-19 17:25:00,527 DEBUG   SystemMonitor:2973661 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-19 17:25:00,528 INFO    HandlerThread:2973661 [interfaces.py:finish():200] Joined cpu monitor
+2024-09-19 17:25:00,530 INFO    HandlerThread:2973661 [interfaces.py:finish():200] Joined disk monitor
+2024-09-19 17:25:00,535 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_created():271] file/dir created: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/wandb-summary.json
+2024-09-19 17:25:00,639 INFO    HandlerThread:2973661 [interfaces.py:finish():200] Joined gpu monitor
+2024-09-19 17:25:00,639 INFO    HandlerThread:2973661 [interfaces.py:finish():200] Joined memory monitor
+2024-09-19 17:25:00,639 INFO    HandlerThread:2973661 [interfaces.py:finish():200] Joined network monitor
+2024-09-19 17:25:00,640 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:00,640 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-09-19 17:25:00,640 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 3
+2024-09-19 17:25:00,640 DEBUG   SenderThread:2973661 [sender.py:send():391] send: stats
+2024-09-19 17:25:00,640 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:00,641 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 3
+2024-09-19 17:25:00,642 DEBUG   SenderThread:2973661 [sender.py:send():391] send: history
+2024-09-19 17:25:00,643 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: summary_record
+2024-09-19 17:25:00,643 INFO    SenderThread:2973661 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-19 17:25:00,644 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:00,644 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-09-19 17:25:00,644 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 4
+2024-09-19 17:25:00,644 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:00,644 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 4
+2024-09-19 17:25:00,644 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:00,645 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-09-19 17:25:00,645 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 5
+2024-09-19 17:25:00,645 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:00,645 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 5
+2024-09-19 17:25:00,645 DEBUG   SenderThread:2973661 [sender.py:send():391] send: summary
+2024-09-19 17:25:00,646 INFO    SenderThread:2973661 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-19 17:25:00,646 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:00,646 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-09-19 17:25:00,646 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 6
+2024-09-19 17:25:00,646 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:00,646 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 6
+2024-09-19 17:25:00,646 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:00,646 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-09-19 17:25:00,648 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: status_report
+2024-09-19 17:25:00,902 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 7
+2024-09-19 17:25:00,902 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:00,902 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 7
+2024-09-19 17:25:00,903 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:00,903 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-09-19 17:25:00,933 INFO    wandb-upload_0:2973661 [upload_job.py:push():130] Uploaded file /tmp/tmpob_nynpvwandb/pzlncevv-media/table/Validation-Table_0_8dfa6f15a19dad38cfc8.table.json
+2024-09-19 17:25:01,524 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-19 17:25:01,535 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/config.yaml
+2024-09-19 17:25:01,536 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/wandb-summary.json
+2024-09-19 17:25:02,536 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:25:03,059 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 8
+2024-09-19 17:25:03,059 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: poll_exit
+2024-09-19 17:25:03,059 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:03,060 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 8
+2024-09-19 17:25:03,061 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:03,061 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-09-19 17:25:03,061 INFO    SenderThread:2973661 [job_builder.py:build():443] Attempting to build job artifact
+2024-09-19 17:25:03,062 INFO    SenderThread:2973661 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-09-19 17:25:03,065 INFO    SenderThread:2973661 [job_builder.py:build():548] adding wandb-job metadata file
+2024-09-19 17:25:03,072 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 9
+2024-09-19 17:25:03,073 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:03,073 DEBUG   SenderThread:2973661 [sender.py:send():391] send: artifact
+2024-09-19 17:25:03,073 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 9
+2024-09-19 17:25:03,525 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-19 17:25:03,536 INFO    Thread-12 :2973661 [dir_watcher.py:_on_file_modified():288] file/dir modified: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:25:03,937 INFO    SenderThread:2973661 [sender.py:send_artifact():1549] sent artifact job-https___github.com_kaichenchai_VinDr_YOLOv8__trainCode_validation.py - {'id': 'QXJ0aWZhY3Q6MTIzNTkzMzE0OA==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ0MjM2MjAwNw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTIzNTkzMzE0OA==', 'versionIndex': 8}}}
+2024-09-19 17:25:03,937 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:03,937 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-09-19 17:25:03,937 INFO    SenderThread:2973661 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-09-19 17:25:04,538 INFO    SenderThread:2973661 [dir_watcher.py:finish():388] scan: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files
+2024-09-19 17:25:04,538 INFO    SenderThread:2973661 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/requirements.txt requirements.txt
+2024-09-19 17:25:04,539 INFO    SenderThread:2973661 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/wandb-summary.json wandb-summary.json
+2024-09-19 17:25:04,539 INFO    SenderThread:2973661 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/config.yaml config.yaml
+2024-09-19 17:25:04,539 INFO    SenderThread:2973661 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/conda-environment.yaml conda-environment.yaml
+2024-09-19 17:25:04,545 INFO    SenderThread:2973661 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/wandb-metadata.json wandb-metadata.json
+2024-09-19 17:25:04,545 INFO    SenderThread:2973661 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log output.log
+2024-09-19 17:25:04,553 INFO    SenderThread:2973661 [dir_watcher.py:finish():402] scan save: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/media/table/Validation-Table_0_8dfa6f15a19dad38cfc8.table.json media/table/Validation-Table_0_8dfa6f15a19dad38cfc8.table.json
+2024-09-19 17:25:04,554 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 10
+2024-09-19 17:25:04,554 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: poll_exit
+2024-09-19 17:25:04,554 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:04,554 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 10
+2024-09-19 17:25:04,555 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:04,555 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-09-19 17:25:04,555 INFO    SenderThread:2973661 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-19 17:25:05,136 INFO    wandb-upload_3:2973661 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/requirements.txt
+2024-09-19 17:25:05,149 INFO    wandb-upload_2:2973661 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/wandb-summary.json
+2024-09-19 17:25:05,280 INFO    wandb-upload_0:2973661 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/config.yaml
+2024-09-19 17:25:05,326 INFO    wandb-upload_1:2973661 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/output.log
+2024-09-19 17:25:05,505 INFO    wandb-upload_4:2973661 [upload_job.py:push():130] Uploaded file /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/files/conda-environment.yaml
+2024-09-19 17:25:05,526 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-19 17:25:05,526 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: poll_exit
+2024-09-19 17:25:05,706 INFO    Thread-11 (_thread_body):2973661 [sender.py:transition_state():626] send defer: 11
+2024-09-19 17:25:05,706 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:05,707 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 11
+2024-09-19 17:25:05,708 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:05,708 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-09-19 17:25:05,708 INFO    SenderThread:2973661 [file_pusher.py:join():175] waiting for file pusher
+2024-09-19 17:25:05,711 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 12
+2024-09-19 17:25:05,711 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:05,711 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 12
+2024-09-19 17:25:05,712 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:05,712 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-09-19 17:25:05,712 INFO    SenderThread:2973661 [file_stream.py:finish():601] file stream finish called
+2024-09-19 17:25:06,509 INFO    SenderThread:2973661 [file_stream.py:finish():605] file stream finish is done
+2024-09-19 17:25:06,509 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 13
+2024-09-19 17:25:06,509 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:06,510 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 13
+2024-09-19 17:25:06,510 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:06,510 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-09-19 17:25:06,510 INFO    SenderThread:2973661 [sender.py:transition_state():626] send defer: 14
+2024-09-19 17:25:06,511 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: defer
+2024-09-19 17:25:06,511 INFO    HandlerThread:2973661 [handler.py:handle_request_defer():184] handle defer: 14
+2024-09-19 17:25:06,511 DEBUG   SenderThread:2973661 [sender.py:send():391] send: final
+2024-09-19 17:25:06,512 DEBUG   SenderThread:2973661 [sender.py:send():391] send: footer
+2024-09-19 17:25:06,512 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: defer
+2024-09-19 17:25:06,512 INFO    SenderThread:2973661 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-09-19 17:25:06,513 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: poll_exit
+2024-09-19 17:25:06,514 DEBUG   SenderThread:2973661 [sender.py:send_request():418] send_request: poll_exit
+2024-09-19 17:25:06,515 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-19 17:25:06,517 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: get_summary
+2024-09-19 17:25:06,518 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: sampled_history
+2024-09-19 17:25:06,520 DEBUG   HandlerThread:2973661 [handler.py:handle_request():158] handle_request: shutdown
+2024-09-19 17:25:06,520 INFO    HandlerThread:2973661 [handler.py:finish():884] shutting down handler
+2024-09-19 17:25:07,514 INFO    WriterThread:2973661 [datastore.py:close():296] close: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/wandb/run-20240919_172343-2dlpju7f/run-2dlpju7f.wandb
+2024-09-19 17:25:07,514 INFO    SenderThread:2973661 [sender.py:finish():1631] shutting down sender
+2024-09-19 17:25:07,514 INFO    SenderThread:2973661 [file_pusher.py:finish():169] shutting down file pusher
+2024-09-19 17:25:07,515 INFO    SenderThread:2973661 [file_pusher.py:join():175] waiting for file pusher
