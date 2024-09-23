@@ -13,7 +13,7 @@ config={
     }
 )
 
-best = "/home/kai/mnt/VinDr_YOLOv8_experiments/trainCode/train_VinDr_YOLOv8/21092024_YOLOv8m_subset-AO-merged/weights/best.pt"
+best = "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/train_VinDr_YOLOv8/21092024_YOLOv8m_subset-AO-merged/weights/best.pt"
 dataset_name = "subset.yaml"
 
 #load the best of the trained model
@@ -30,7 +30,7 @@ metrics = model.val(project = "train_VinDr_YOLOv8",
             plots = True,
             batch = 16,
             save_json = True,
-            device=[0],
+            device=[0, 1],
             split = "test",
             max_det = 1)
 
