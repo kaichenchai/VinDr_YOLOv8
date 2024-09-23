@@ -1,0 +1,40 @@
+Ultralytics YOLOv8.2.99 🚀 Python-3.12.5 torch-2.4.0 CUDA:0 (NVIDIA GeForce RTX 2080 Ti, 11012MiB)
+                                                     CUDA:1 (NVIDIA GeForce RTX 2080 Ti, 11004MiB)
+Model summary (fused): 218 layers, 25,840,339 parameters, 0 gradients, 78.7 GFLOPs
+[34m[1mval: [39m[22mScanning /mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/test.cache... 220 images, 2780 backgrounds,
+
+
+
+
+
+
+
+
+
+
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95):  10%|█         | 19/188 [00:22<03:20,  1.19s/it]
+Traceback (most recent call last):
+  File "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/validation.py", line 26, in <module>
+    metrics = model.val(project = "train_VinDr_YOLOv8",
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/model.py", line 636, in val
+    validator(model=self.model)
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/validator.py", line 186, in __call__
+    preds = self.postprocess(preds)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/models/yolo/detect/val.py", line 94, in postprocess
+    return ops.non_max_suppression(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/ultralytics/utils/ops.py", line 292, in non_max_suppression
+    i = torchvision.ops.nms(boxes, scores, iou_thres)  # NMS
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torchvision/ops/boxes.py", line 41, in nms
+    return torch.ops.torchvision.nms(boxes, scores, iou_threshold)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/miniconda3/envs/yolov8/lib/python3.12/site-packages/torch/_ops.py", line 1061, in __call__
+    return self_._op(*args, **(kwargs or {}))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
