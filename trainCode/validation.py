@@ -31,7 +31,7 @@ metrics = model.val(project = "train_VinDr_YOLOv8",
             batch = 16,
             save_json = True,
             device=[0, 1],
-            split = "test",
+            split = "val",
             max_det = 1)
 
 
