@@ -3,7 +3,7 @@ from wandb.integration.ultralytics import add_wandb_callback
 import wandb
 
 # Step 1: Initialize a Weights & Biases run
-wandb.init(project="train_VinDr_YOLOv8", job_type="validation", name = "18092024_YOLOv8m_subset-AO-merged_VAL_1DET",
+wandb.init(project="train_VinDr_YOLOv8", job_type="validation", name = "23092024_YOLOv8m_subset-AO-merged_VAL_1DET",
 config={
     "dataset": "FULL_brightnessEQ_VinDr_FIXED",
     "model": "YOLOv8m_best.pt",
@@ -13,7 +13,7 @@ config={
     }
 )
 
-best = "/home/kai/mnt/VinDr_YOLOv8_experiments/trainCode/train_VinDr_YOLOv8/18092024_YOLOv8m_subset-AO-merged/weights/best.pt"
+best = "/home/kai/mnt/VinDr_YOLOv8_experiments/trainCode/train_VinDr_YOLOv8/21092024_YOLOv8m_subset-AO-merged/weights/best.pt"
 dataset_name = "subset.yaml"
 
 #load the best of the trained model
@@ -25,7 +25,7 @@ add_wandb_callback(model, enable_model_checkpointing=True)
 #validation info
 metrics = model.val(project = "train_VinDr_YOLOv8",
             data = dataset_name,
-            name = "18092024_YOLOv8m_subset-AO-merged_VAL_1DET",
+            name = "23092024_YOLOv8m_subset-AO-merged_VAL_1DET",
             imgsz = 1024,
             plots = True,
             batch = 16,
