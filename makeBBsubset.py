@@ -20,7 +20,7 @@ def makeLabelsSetDim(labelsDir, outputDir, dim, classDict):
     x_dim = dim[0]
     y_dim = dim[1]
     for row in fileDf.itertuples():
-        scanID = row[1]
+        scanID = row.image_id
         classNum = row.class_name
         x_min = row.x_min
         y_max = row.y_max #annotations also count from top left corner to bottom left corner
@@ -53,9 +53,9 @@ if __name__ == "__main__":
     #removeObs("FULL_1024_PAD_annotations/anno_train.csv", classesDict, "train.csv")
     #removeObs("FULL_1024_PAD_annotations/anno_test.csv", classesDict, "test.csv")
     print("Making train")
-    makeLabelsSetDim("mergedTrain.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
+    makeLabelsSetDim("mergedTrain-AO.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/train", (1024, 1024), classesDict)
     print("Making val")
-    makeLabelsSetDim("mergedVal.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
+    makeLabelsSetDim("mergedVal-AO.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/val", (1024, 1024), classesDict)
     print("Making test")
-    makeLabelsSetDim("mergedTest.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/test", (1024, 1024), classesDict)
+    makeLabelsSetDim("mergedTest-AO.csv", "/mnt/data/kai/VinDr_YOLOv8_experiments/datasets/FULL_1024_brightnessEQ_FIXED/labels/test", (1024, 1024), classesDict)
 
