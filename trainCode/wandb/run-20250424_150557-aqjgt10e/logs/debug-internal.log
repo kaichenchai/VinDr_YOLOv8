@@ -1,0 +1,24 @@
+{"time":"2025-04-24T15:05:57.946623645+08:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2025-04-24T15:05:57.946638689+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_code/VinDr_YOLOv8/trainCode/wandb/run-20250424_150557-aqjgt10e/logs/debug-core.log"}
+{"time":"2025-04-24T15:05:57.946670943+08:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2025-04-24T15:05:57.946673529+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_code/VinDr_YOLOv8/trainCode/wandb/run-20250424_150557-aqjgt10e/logs/debug-core.log"}
+{"time":"2025-04-24T15:05:57.947760602+08:00","level":"INFO","msg":"created new stream","id":"aqjgt10e"}
+{"time":"2025-04-24T15:05:57.947769463+08:00","level":"INFO","msg":"stream: started","id":"aqjgt10e"}
+{"time":"2025-04-24T15:05:57.947793905+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"aqjgt10e"}}
+{"time":"2025-04-24T15:05:57.947832539+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"aqjgt10e"}}
+{"time":"2025-04-24T15:05:57.947789732+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"aqjgt10e"}}
+{"time":"2025-04-24T15:05:58.397901231+08:00","level":"ERROR","msg":"HTTP error","status":401,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-24T15:05:58.397931739+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 401 Unauthorized: {\"errors\":[{\"message\":\"user is not logged in\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-24T15:05:58.710944847+08:00","level":"INFO","msg":"stream: closing","id":"aqjgt10e"}
+{"time":"2025-04-24T15:05:59.001761117+08:00","level":"ERROR","msg":"HTTP error","status":401,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-24T15:05:59.001795805+08:00","level":"ERROR","msg":"sender: sendConfig:","error":"returned error 401 Unauthorized: {\"errors\":[{\"message\":\"user is not logged in\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2025-04-24T15:05:59.002270233+08:00","level":"WARN","msg":"No requirements.txt found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job"}
+{"time":"2025-04-24T15:05:59.002272954+08:00","level":"INFO","msg":"sender: sendDefer: no job artifact to save"}
+{"time":"2025-04-24T15:05:59.018476087+08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-24T15:05:59.018491931+08:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"project /train_VinDr_YOLOv8 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2025-04-24T15:05:59.313976758+08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-04-24T15:05:59.314018322+08:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"project /train_VinDr_YOLOv8 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2025-04-24T15:05:59.31405887+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"aqjgt10e"}}
+{"time":"2025-04-24T15:05:59.314066468+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"aqjgt10e"}}
+{"time":"2025-04-24T15:05:59.314095255+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"aqjgt10e"}}
+{"time":"2025-04-24T15:05:59.314098391+08:00","level":"INFO","msg":"stream: closed","id":"aqjgt10e"}

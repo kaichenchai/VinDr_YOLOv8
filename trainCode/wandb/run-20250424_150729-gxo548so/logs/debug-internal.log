@@ -1,0 +1,18 @@
+{"time":"2025-04-24T15:07:29.548109158+08:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2025-04-24T15:07:29.548122989+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_code/VinDr_YOLOv8/trainCode/wandb/run-20250424_150729-gxo548so/logs/debug-core.log"}
+{"time":"2025-04-24T15:07:29.548151028+08:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2025-04-24T15:07:29.548153637+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_code/VinDr_YOLOv8/trainCode/wandb/run-20250424_150729-gxo548so/logs/debug-core.log"}
+{"time":"2025-04-24T15:07:29.549592966+08:00","level":"INFO","msg":"created new stream","id":"gxo548so"}
+{"time":"2025-04-24T15:07:29.549610933+08:00","level":"INFO","msg":"stream: started","id":"gxo548so"}
+{"time":"2025-04-24T15:07:29.549663778+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"gxo548so"}}
+{"time":"2025-04-24T15:07:29.549673982+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"gxo548so"}}
+{"time":"2025-04-24T15:07:29.549693607+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"gxo548so"}}
+{"time":"2025-04-24T15:07:30.022463246+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-04-24T15:07:30.022979253+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-24T15:21:39.54872909+08:00","level":"INFO","msg":"stream: closing","id":"gxo548so"}
+{"time":"2025-04-24T15:21:39.548877814+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-24T15:21:39.58074717+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-24T15:21:43.877801979+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"gxo548so"}}
+{"time":"2025-04-24T15:21:43.877838886+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"gxo548so"}}
+{"time":"2025-04-24T15:21:43.877854437+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"gxo548so"}}
+{"time":"2025-04-24T15:21:43.877873312+08:00","level":"INFO","msg":"stream: closed","id":"gxo548so"}

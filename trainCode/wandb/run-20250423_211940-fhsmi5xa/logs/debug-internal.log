@@ -1,0 +1,18 @@
+{"time":"2025-04-23T21:19:40.455202056+08:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2025-04-23T21:19:40.455212224+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_code/VinDr_YOLOv8/trainCode/wandb/run-20250423_211940-fhsmi5xa/logs/debug-core.log"}
+{"time":"2025-04-23T21:19:40.455242162+08:00","level":"INFO","msg":"using version","core version":"0.18.1"}
+{"time":"2025-04-23T21:19:40.455244743+08:00","level":"INFO","msg":"created symlink","path":"/mnt/data/kai/VinDr_code/VinDr_YOLOv8/trainCode/wandb/run-20250423_211940-fhsmi5xa/logs/debug-core.log"}
+{"time":"2025-04-23T21:19:40.456774481+08:00","level":"INFO","msg":"created new stream","id":"fhsmi5xa"}
+{"time":"2025-04-23T21:19:40.456795823+08:00","level":"INFO","msg":"stream: started","id":"fhsmi5xa"}
+{"time":"2025-04-23T21:19:40.456813131+08:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"fhsmi5xa"}}
+{"time":"2025-04-23T21:19:40.456818969+08:00","level":"INFO","msg":"sender: started","stream_id":{"value":"fhsmi5xa"}}
+{"time":"2025-04-23T21:19:40.456823479+08:00","level":"INFO","msg":"handler: started","stream_id":{"value":"fhsmi5xa"}}
+{"time":"2025-04-23T21:19:40.944514655+08:00","level":"INFO","msg":"wandb-core","!BADKEY":null}
+{"time":"2025-04-23T21:19:40.945008871+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-04-23T21:37:44.871503722+08:00","level":"INFO","msg":"stream: closing","id":"fhsmi5xa"}
+{"time":"2025-04-23T21:37:44.871566722+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-04-23T21:37:44.921871068+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-04-23T21:37:48.874815314+08:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"fhsmi5xa"}}
+{"time":"2025-04-23T21:37:48.874850049+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"fhsmi5xa"}}
+{"time":"2025-04-23T21:37:48.874886071+08:00","level":"INFO","msg":"sender: closed","stream_id":{"value":"fhsmi5xa"}}
+{"time":"2025-04-23T21:37:48.874904377+08:00","level":"INFO","msg":"stream: closed","id":"fhsmi5xa"}
