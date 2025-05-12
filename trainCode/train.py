@@ -17,10 +17,10 @@ add_wandb_callback(model, enable_model_checkpointing=True)
 # Step 4: Train and Fine-Tune the Model
 model.train(project = "train_VinDr_YOLOv8",
             data = dataset_name,
-            name = "110525_YOLOv8m_subset-C-merged-CLAHE",
+            name = "110525_YOLOv8m_subset-C-merged-CLAHE-bone-suppression",
             epochs = 50,
             batch = 16,
-            imgsz = 1024,
+            imgsz = 512,
             plots = True,
             device=[0]
             )

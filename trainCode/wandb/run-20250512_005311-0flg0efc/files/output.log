@@ -1,0 +1,4 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mScanning /mnt/data/kai/VinDr_Subsets/FULL_1024_CLAHE_padding_bone_suppression/labels/train... 890 images, 6904 backgrounds, 0 corrupt:  65%|██████▍   | 7794/12000 [00:20<00:18, 223.01it/s]
