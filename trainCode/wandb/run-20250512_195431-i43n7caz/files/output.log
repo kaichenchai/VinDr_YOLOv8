@@ -1,0 +1,119 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [0mrunning Automatic Mixed Precision (AMP) checks...
+[34m[1mAMP: [0mchecks passed ✅
+[34m[1mtrain: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 6374.0±1360.4 MB/s, size: 123.8 KB)
+[34m[1mtrain: [0mScanning /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/labels/train.cache... 1853 images, 10147 backgrounds, 0 corrupt: 100%|██████████| 12000/12000 [00:00<?, ?it/s]
+[34m[1mval: [0mFast image access ✅ (ping: 0.0±0.0 ms, read: 2752.3±1496.4 MB/s, size: 137.9 KB)
+[34m[1mval: [0mScanning /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/labels/val.cache... 463 images, 2537 backgrounds, 0 corrupt: 100%|██████████| 3000/3000 [00:00<?, ?it/s]
+Plotting labels to train_VinDr_YOLOv8/120525_YOLOv8m_subset-C-merged-CLAHE-bone-suppression/labels.jpg...
+[34m[1moptimizer:[0m Adam(lr=0.01, momentum=0.937) with parameter groups 77 weight(decay=0.0), 84 weight(decay=0.0005), 83 bias(decay=0.0)
+Image sizes 512 train, 512 val
+Using 8 dataloader workers
+Logging results to [1mtrain_VinDr_YOLOv8/120525_YOLOv8m_subset-C-merged-CLAHE-bone-suppression[0m
+Starting training for 50 epochs...
+
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       1/50      3.98G      2.073      3.411      1.838          4        512: 100%|██████████| 750/750 [00:48<00:00, 15.57it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 94/94 [00:04<00:00, 20.02it/s]
+                   all       3000        463      0.261      0.462      0.258      0.101
+Ultralytics 8.3.131 🚀 Python-3.12.5 torch-2.4.0 CUDA:0 (NVIDIA GeForce RTX 4090, 24202MiB)
+YOLOv8m summary (fused): 92 layers, 25,886,080 parameters, 0 gradients, 78.9 GFLOPs
+Generating Visualizations for batch-1/1:   0%|          | 0/32 [00:00<?, ?it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/0005e8e3701dfb1dd93d53e2ff537b6e.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf649175d6643b54f833f22eb8ab6856.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   6%|▋         | 2/32 [00:00<00:01, 19.28it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf7d44685ac3a9566e53d665efe1ee28.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf83c13a10d87eccc1a98032d14daf67.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  12%|█▎        | 4/32 [00:00<00:01, 19.54it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cfbf4cf50bfdc65b49aa60353700a130.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cfc14023c79c0ff855afa04a9cc3d344.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cfde4e4df35ec98329ebcbfb67c7a2e6.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  22%|██▏       | 7/32 [00:00<00:01, 21.11it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cfe2a83e8e5520b17dfd5b68658af5a3.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cfe632d589ef4f9a147c31ece8478b01.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cff3951a5ec93e7c9d7cffa8de85d429.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  31%|███▏      | 10/32 [00:00<00:00, 23.30it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cff4f1d1453d0fbb014277081e8f939c.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d0637a84d6a59365a0b4b86dbd4b52ce.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d06958788f925d72f3ff75b0e9fced31.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  41%|████      | 13/32 [00:00<00:00, 24.83it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d06ae8bf3c1a859ca62cbcf727d6fb9f.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d06c8ceb9a059ac9d5cecafd846d3b96.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d07fc23907af771d70b92ffb8403d54d.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  50%|█████     | 16/32 [00:00<00:00, 25.33it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d0902c52f5d4f42d3c26cae4418f74d8.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d09e357225d7ce75a4c44fe4c3c74de6.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d0a77e651ebb7469776fd9701e651405.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  59%|█████▉    | 19/32 [00:00<00:00, 24.30it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d0aa3360ff5ddf919d9eb4f3a20e3342.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf60aecdac2cd4bfb35e7ff1bea5d61b.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d0ba91d080f99ca71354391a5fd5df57.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  69%|██████▉   | 22/32 [00:00<00:00, 25.45it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf5d241e98fe10f99d5a950236040feb.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf52f309aeabc516b79a22632a856b01.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/ce4a461ab5b95bc7b79bc6bea11f7ff8.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  78%|███████▊  | 25/32 [00:01<00:00, 25.96it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/ce6f6eaa5a4915c73252877fd6fde781.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/ce7d4f9583c46cafacf0b049c3facb46.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/ce84d3c401780408a54c9a8e17d7a8eb.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|████████▊ | 28/32 [00:01<00:00, 26.74it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/ce8e54dcabb9871f7b456e81381106eb.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/ce9a36cacc3414d23fc4eab451bd8ecb.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/ce9df8182abe024c862d71877c121b43.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  97%|█████████▋| 31/32 [00:01<00:00, 27.13it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/ceb4c84420bf3e4ac5e79dac13435ef9.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|██████████| 32/32 [00:01<00:00, 25.25it/s]
+Generating Visualizations for batch-1/1:   0%|          | 0/32 [00:00<?, ?it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cebe8f410d6d5bffb158789e7482e14a.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cec7d7744eecb716dc8543f650ba5ae6.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cee9182867dea695829e246be6723d2b.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:   9%|▉         | 3/32 [00:00<00:01, 26.96it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cee92cbc41867428da8409c724096ec3.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cef0b28900e768bd8a5710641a5eb498.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf01a407b4f06bb25fae7b729f65a602.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf032b9405406c4b2a8a516e08531333.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  22%|██▏       | 7/32 [00:00<00:00, 29.05it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf08d47db64605ede9e0946893ab1f09.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf0a0074d83b71b62df5ff2befebad3d.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf0b90b6de218a24fe83a379f143f5ea.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  31%|███▏      | 10/32 [00:00<00:00, 29.05it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/cf5553ec8426712834424234acd1e617.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d0c002130841e793bfca41ddb53fbda5.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  41%|████      | 13/32 [00:00<00:00, 28.55it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d0c26a940c582594036c08b85b75e541.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d0c9230521fb4ce7a61b41eb9af6e645.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d2083e8bfb9adff9bbb2df12850ff45c.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  50%|█████     | 16/32 [00:00<00:00, 28.46it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d20b5a85afcc3d51263ba89341b3fa17.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d21348f5619f5bd7dfd21bc0104ddcea.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d21f66ca95779da134369e279004ef03.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  59%|█████▉    | 19/32 [00:00<00:00, 28.59it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d2218e693c5f8bd961d3cde598a9b437.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d22e6aec7d43fed24900e1c34161637d.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d233017534707d09cf6d9b8c34b3ab10.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  69%|██████▉   | 22/32 [00:00<00:00, 28.39it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d23bb0447470c62748051ef65bbf7698.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d246d9841f32abee30f38be04f4c77f9.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d24f6cd1af8b44256ed82ed8ebab1771.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  78%|███████▊  | 25/32 [00:00<00:00, 28.41it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d264de8c001ad3304fb6ee0c6ae379ec.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d272605382fd19522fe2afefa4db1272.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d2745cc114e770daf895ee9591fda07e.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  88%|████████▊ | 28/32 [00:00<00:00, 28.02it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d275ff253f1389632007e075c1a73599.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d28066fe44fe04cfc20c727bd3155510.png has no bounding boxes labels
+wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d281927a65e081c3a2853bca2382a3b8.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  97%|█████████▋| 31/32 [00:01<00:00, 28.22it/s]wandb: WARNING Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/val/d29e710527ad79b62590045f7a7dbc9a.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|██████████| 32/32 [00:01<00:00, 28.46it/s]
+Traceback (most recent call last):
+  File "/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode/train.py", line 18, in <module>
+    model.train(project = "train_VinDr_YOLOv8",
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/model.py", line 793, in train
+    self.trainer.train()
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 212, in train
+    self._do_train(world_size)
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 460, in _do_train
+    self.run_callbacks("on_fit_epoch_end")
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/trainer.py", line 174, in run_callbacks
+    callback(self)
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/wandb/integration/ultralytics/callback.py", line 323, in on_fit_epoch_end
+    self._save_model(trainer)
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/wandb/integration/ultralytics/callback.py", line 254, in _save_model
+    model_checkpoint_artifact.add_file(checkpoint_path)
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/wandb/sdk/artifacts/_validators.py", line 235, in wrapper
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/wandb/sdk/artifacts/artifact.py", line 1414, in add_file
+    return self._add_local_file(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/wandb/sdk/artifacts/artifact.py", line 1679, in _add_local_file
+    shutil.copyfile(path, staging_path)
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/shutil.py", line 273, in copyfile
+    _fastcopy_sendfile(fsrc, fdst)
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/shutil.py", line 164, in _fastcopy_sendfile
+    raise err from None
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/shutil.py", line 150, in _fastcopy_sendfile
+    sent = os.sendfile(outfd, infd, offset, blocksize)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 28] No space left on device: 'train_VinDr_YOLOv8/120525_YOLOv8m_subset-C-merged-CLAHE-bone-suppression/weights/epoch0.pt' -> '/home/kai/.local/share/wandb/artifacts/staging/tmpz4em4a1b'

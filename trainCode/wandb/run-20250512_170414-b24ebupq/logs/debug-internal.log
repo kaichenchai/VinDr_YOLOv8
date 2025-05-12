@@ -1,0 +1,23 @@
+{"time":"2025-05-12T17:04:14.197818969+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode/wandb/run-20250512_170414-b24ebupq/logs/debug-core.log"}
+{"time":"2025-05-12T17:04:14.639088917+08:00","level":"INFO","msg":"created new stream","id":"b24ebupq"}
+{"time":"2025-05-12T17:04:14.639115841+08:00","level":"INFO","msg":"stream: started","id":"b24ebupq"}
+{"time":"2025-05-12T17:04:14.6391716+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"b24ebupq"}
+{"time":"2025-05-12T17:04:14.639197146+08:00","level":"INFO","msg":"handler: started","stream_id":"b24ebupq"}
+{"time":"2025-05-12T17:04:14.639244725+08:00","level":"INFO","msg":"sender: started","stream_id":"b24ebupq"}
+{"time":"2025-05-12T17:04:14.988814401+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-12T17:14:27.592780487+08:00","level":"ERROR","msg":"error adding file to cache","err":"write /home/kai/.cache/wandb/artifacts/tmp/4224243072: no space left on device"}
+{"time":"2025-05-12T17:15:23.045480683+08:00","level":"ERROR","msg":"error adding file to cache","err":"write /home/kai/.cache/wandb/artifacts/tmp/3142365110: no space left on device"}
+{"time":"2025-05-12T17:16:18.513975087+08:00","level":"ERROR","msg":"error adding file to cache","err":"write /home/kai/.cache/wandb/artifacts/tmp/1364923443: no space left on device"}
+{"time":"2025-05-12T17:17:13.151304895+08:00","level":"ERROR","msg":"error adding file to cache","err":"write /home/kai/.cache/wandb/artifacts/tmp/3413962977: no space left on device"}
+{"time":"2025-05-12T17:18:08.507324514+08:00","level":"ERROR","msg":"error adding file to cache","err":"write /home/kai/.cache/wandb/artifacts/tmp/998614124: no space left on device"}
+{"time":"2025-05-12T17:19:03.235834481+08:00","level":"ERROR","msg":"error adding file to cache","err":"write /home/kai/.cache/wandb/artifacts/tmp/791835423: no space left on device"}
+{"time":"2025-05-12T17:20:51.642940779+08:00","level":"ERROR","msg":"error adding file to cache","err":"write /home/kai/.cache/wandb/artifacts/tmp/2698588850: no space left on device"}
+{"time":"2025-05-12T17:21:46.394700214+08:00","level":"ERROR","msg":"error adding file to cache","err":"write /home/kai/.cache/wandb/artifacts/tmp/3373548033: no space left on device"}
+{"time":"2025-05-12T17:22:40.05374267+08:00","level":"INFO","msg":"stream: closing","id":"b24ebupq"}
+{"time":"2025-05-12T17:22:40.053769761+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-12T17:22:40.053780344+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-12T17:22:41.126724549+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-12T17:22:41.561800844+08:00","level":"INFO","msg":"handler: closed","stream_id":"b24ebupq"}
+{"time":"2025-05-12T17:22:41.561834616+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"b24ebupq"}
+{"time":"2025-05-12T17:22:41.561854218+08:00","level":"INFO","msg":"sender: closed","stream_id":"b24ebupq"}
+{"time":"2025-05-12T17:22:41.561868588+08:00","level":"INFO","msg":"stream: closed","id":"b24ebupq"}

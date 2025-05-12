@@ -1,0 +1,42 @@
+{
+  "os": "Linux-6.8.9-100.fc38.x86_64-x86_64-with-glibc2.37",
+  "python": "CPython 3.12.5",
+  "startedAt": "2025-05-12T12:18:00.181085Z",
+  "program": "/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode/train.py",
+  "codePath": "trainCode/train.py",
+  "git": {
+    "remote": "git@github.com:kaichenchai/VinDr_YOLOv8.git",
+    "commit": "54fa86590b1beba1db345bc89563cd5b83656829"
+  },
+  "email": "englishorc65@gmail.com",
+  "root": "/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode",
+  "host": "fedora",
+  "executable": "/home/kai/.conda/envs/yolov8/bin/python3",
+  "codePathLocal": "train.py",
+  "cpu_count": 16,
+  "cpu_count_logical": 24,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "998500204544",
+      "used": "996272029696"
+    }
+  },
+  "memory": {
+    "total": "33441648640"
+  },
+  "cpu": {
+    "count": 16,
+    "countLogical": 24
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada"
+    }
+  ],
+  "cudaVersion": "12.4"
+}
