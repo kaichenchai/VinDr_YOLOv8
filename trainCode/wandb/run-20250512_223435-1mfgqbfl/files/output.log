@@ -1,0 +1,20 @@
+Ultralytics 8.3.131 🚀 Python-3.12.5 torch-2.4.0
+Traceback (most recent call last):
+  File "/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode/validation.py", line 26, in <module>
+    metrics = model.val(project = "train_VinDr_YOLOv8",
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/model.py", line 630, in val
+    validator(model=self.model)
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/ultralytics/engine/validator.py", line 162, in __call__
+    device=select_device(self.args.device, self.args.batch),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kai/.conda/envs/yolov8/lib/python3.12/site-packages/ultralytics/utils/torch_utils.py", line 199, in select_device
+    raise ValueError(
+ValueError: Invalid CUDA 'device=0,1' requested. Use 'device=cpu' or pass valid CUDA device(s) if available, i.e. 'device=0' or 'device=0,1,2,3' for Multi-GPU.
+
+torch.cuda.is_available(): True
+torch.cuda.device_count(): 1
+os.environ['CUDA_VISIBLE_DEVICES']: None
