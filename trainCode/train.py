@@ -20,9 +20,11 @@ model.train(project = "train_VinDr_YOLOv8",
             name = "12092024_YOLOv8m_subset-C-merged",
             epochs = 50,
             batch = 16,
-            imgsz = 1024,
+            imgsz = 512,
             plots = True,
-            device=[0, 1]
+            device=[0],
+            optimizer="Adam",
+            save_period=10
             )
 
 wandb.finish()
