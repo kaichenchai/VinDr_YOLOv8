@@ -1,0 +1,16 @@
+{"time":"2025-05-13T10:42:43.57106492+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode/wandb/run-20250513_104243-vmq5jguu/logs/debug-core.log"}
+{"time":"2025-05-13T10:42:44.007059841+08:00","level":"INFO","msg":"created new stream","id":"vmq5jguu"}
+{"time":"2025-05-13T10:42:44.007091835+08:00","level":"INFO","msg":"stream: started","id":"vmq5jguu"}
+{"time":"2025-05-13T10:42:44.007152459+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"vmq5jguu"}
+{"time":"2025-05-13T10:42:44.007187779+08:00","level":"INFO","msg":"sender: started","stream_id":"vmq5jguu"}
+{"time":"2025-05-13T10:42:44.007204082+08:00","level":"INFO","msg":"handler: started","stream_id":"vmq5jguu"}
+{"time":"2025-05-13T10:42:44.336124055+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-13T10:43:40.2464287+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-13T10:43:40.246494658+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-13T10:43:41.247821185+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-vmq5jguu-Validation-Table","runtime_seconds":1.593099037},{"desc":"uploading output.log","runtime_seconds":0.68752801,"progress":"6.2KB/6.2KB"},{"desc":"uploading config.yaml","runtime_seconds":0.408311803,"progress":"693B/693B"}],"total_operations":3}}
+{"time":"2025-05-13T10:43:42.555831576+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-13T10:43:43.136926692+08:00","level":"INFO","msg":"stream: closing","id":"vmq5jguu"}
+{"time":"2025-05-13T10:43:43.136940571+08:00","level":"INFO","msg":"handler: closed","stream_id":"vmq5jguu"}
+{"time":"2025-05-13T10:43:43.136945521+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vmq5jguu"}
+{"time":"2025-05-13T10:43:43.136993505+08:00","level":"INFO","msg":"sender: closed","stream_id":"vmq5jguu"}
+{"time":"2025-05-13T10:43:43.136997811+08:00","level":"INFO","msg":"stream: closed","id":"vmq5jguu"}
