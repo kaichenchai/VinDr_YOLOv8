@@ -1,0 +1,16 @@
+{"time":"2025-05-13T10:46:04.336652364+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode/wandb/run-20250513_104604-xa5l2k79/logs/debug-core.log"}
+{"time":"2025-05-13T10:46:04.807146406+08:00","level":"INFO","msg":"created new stream","id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:04.807168317+08:00","level":"INFO","msg":"stream: started","id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:04.807249603+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:04.807289655+08:00","level":"INFO","msg":"sender: started","stream_id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:04.807335902+08:00","level":"INFO","msg":"handler: started","stream_id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:05.169384866+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-13T10:46:37.483698746+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-13T10:46:37.483770818+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-13T10:46:38.484856083+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-xa5l2k79-Validation-Table","runtime_seconds":1.683030386}],"total_operations":1}}
+{"time":"2025-05-13T10:46:39.474346438+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-13T10:46:39.909880578+08:00","level":"INFO","msg":"stream: closing","id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:39.909907689+08:00","level":"INFO","msg":"handler: closed","stream_id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:39.9099201+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:39.909960284+08:00","level":"INFO","msg":"sender: closed","stream_id":"xa5l2k79"}
+{"time":"2025-05-13T10:46:39.909963613+08:00","level":"INFO","msg":"stream: closed","id":"xa5l2k79"}
