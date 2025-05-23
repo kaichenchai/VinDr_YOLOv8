@@ -1,0 +1,28 @@
+Ultralytics 8.3.131 🚀 Python-3.12.5 torch-2.4.0 CUDA:0 (NVIDIA GeForce RTX 4090, 24202MiB)
+Model summary (fused): 92 layers, 25,840,339 parameters, 0 gradients, 78.7 GFLOPs
+[34m[1mval: [0mFast image access ✅ (ping: 3.0±5.9 ms, read: 9.5±2.3 MB/s, size: 124.5 KB)
+[34m[1mval: [0mScanning /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppressi[0m
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|████████
+                   all       3000        309      0.579      0.757      0.733      0.377
+Ultralytics 8.3.131 🚀 Python-3.12.5 torch-2.4.0 CUDA:0 (NVIDIA GeForce RTX 4090, 24202MiB)
+Model summary (fused): 92 layers, 25,840,339 parameters, 0 gradients, 78.7 GFLOPs
+Generating Visualizations for batch-1/1:   0%|                                  | 0/16 [00:00<?, ?it/s][34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/002a34c58c5b758217ed1f584ccbcfe9.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/adb78a62d4d98624dc87fd1da2a47fbf.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/adca1d936c8d6b0cd25c0011894f20dd.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  19%|████▉                     | 3/16 [00:00<00:00, 27.17it/s][34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/add028f733f04ffb837bae1ab64ecdab.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ade7c2225ef5aa319a66de15812a7e79.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/adf83198e0e44726552116b6bf7b845a.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae0a37c6a0d67c39df4d50a8c682fc1d.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  44%|███████████▍              | 7/16 [00:00<00:00, 29.41it/s][34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae1a1f3641ea3d97e97fd07bbc7edb5d.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae1be0bdd3023c9d1d16d25124c6c6d2.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae2c627a8cdf3ed34305217f530fad73.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  62%|███████████████▋         | 10/16 [00:00<00:00, 29.19it/s][34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae39157042d5ff9e264c7f6b18812938.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae449aa8589959e118d06c008dcd5035.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae5448304e886b7dee7e095e5bcf66f4.png has no bounding boxes labels
+Generating Visualizations for batch-1/1:  81%|████████████████████▎    | 13/16 [00:00<00:00, 29.44it/s][34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae6434cc392e34dc83ce31ce480c5858.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae65f96c6901de63e9ca768bb58c3253.png has no bounding boxes labels
+[34m[1mwandb[0m: [33mWARNING[0m Image: /mnt/data/kai/VinDr_Subsets/YOLOv8_format_datasets/FULL_1024_CLAHE_padding_bone_suppression/images/test/ae764a3ffd1b0317e4496637b3708a20.png has no bounding boxes labels
+Generating Visualizations for batch-1/1: 100%|█████████████████████████| 16/16 [00:00<00:00, 29.30it/s]
+Speed: 0.1ms preprocess, 1.9ms inference, 0.0ms loss, 0.1ms postprocess per image
+Saving train_VinDr_YOLOv8/230525_YOLOv8m_subset-C-merged-CLAHE-bone-suppression_512_VAL2/predictions.json...
+Results saved to [1mtrain_VinDr_YOLOv8/230525_YOLOv8m_subset-C-merged-CLAHE-bone-suppression_512_VAL2[0m
