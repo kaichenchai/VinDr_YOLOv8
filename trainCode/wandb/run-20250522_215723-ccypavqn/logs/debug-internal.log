@@ -1,0 +1,16 @@
+{"time":"2025-05-22T21:57:23.831077554+08:00","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode/wandb/run-20250522_215723-ccypavqn/logs/debug-core.log"}
+{"time":"2025-05-22T21:57:24.56538622+08:00","level":"INFO","msg":"created new stream","id":"ccypavqn"}
+{"time":"2025-05-22T21:57:24.565404366+08:00","level":"INFO","msg":"stream: started","id":"ccypavqn"}
+{"time":"2025-05-22T21:57:24.565419684+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ccypavqn"}
+{"time":"2025-05-22T21:57:24.565457685+08:00","level":"INFO","msg":"handler: started","stream_id":"ccypavqn"}
+{"time":"2025-05-22T21:57:24.565481245+08:00","level":"INFO","msg":"sender: started","stream_id":"ccypavqn"}
+{"time":"2025-05-22T21:57:25.044348156+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-22T23:33:15.354884448+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-22T23:33:15.370235641+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-22T23:33:16.31598067+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run_ccypavqn_model","runtime_seconds":9.223410558,"subtasks":[{"desc":"epoch99.pt","runtime_seconds":8.02123871,"progress":"95.1MB/296.5MB"}]},{"desc":"uploading artifact run-ccypavqn-Train-Table","runtime_seconds":1.260351409},{"desc":"uploading media/table/Train-Table_0_0e6f352c8fe3859bb1b2.table.json","runtime_seconds":0.87786988,"progress":"112.7KB/112.7KB"},{"desc":"uploading output.log","runtime_seconds":0.335021177,"progress":"970.2KB/970.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.335014976,"progress":"1.3KB/1.3KB"}],"total_operations":5}}
+{"time":"2025-05-22T23:33:33.926607598+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-22T23:33:34.303519437+08:00","level":"INFO","msg":"stream: closing","id":"ccypavqn"}
+{"time":"2025-05-22T23:33:34.303530458+08:00","level":"INFO","msg":"handler: closed","stream_id":"ccypavqn"}
+{"time":"2025-05-22T23:33:34.30353981+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ccypavqn"}
+{"time":"2025-05-22T23:33:34.303571097+08:00","level":"INFO","msg":"sender: closed","stream_id":"ccypavqn"}
+{"time":"2025-05-22T23:33:34.303575169+08:00","level":"INFO","msg":"stream: closed","id":"ccypavqn"}
