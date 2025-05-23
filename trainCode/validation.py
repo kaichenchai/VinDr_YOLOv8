@@ -10,7 +10,7 @@ config={
     "image_size": 512,
     "batch": 16,
     "machine": "RTX4090",
-    "conf": 0.10
+    "conf": 0.20
 }
 )
 best = "/mnt/data/kai/VinDr_Code/VinDr_YOLOv8/trainCode/train_VinDr_YOLOv8/230525_YOLOv8m_subset-C-merged-CLAHE-bone-suppression/weights/best.pt"
@@ -33,7 +33,7 @@ metrics = model.val(project = "train_VinDr_YOLOv8",
             device=[0],
             split = "test",
             max_det = 1,
-            conf = 0.10)
+            conf = 0.20)
 
 
 
