@@ -1,0 +1,30 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            u139jc8lennvxiwnbek7obt6862oaf4v:
+                codePath: trainCode/upload_files.py
+                codePathLocal: upload_files.py
+                email: englishorc65@gmail.com
+                executable: /home/kai/miniconda3/envs/yolov8/bin/python3
+                git:
+                    commit: 19ff7a4175345c42cfeac182fb8759dcd6d462ed
+                    remote: https://github.com/kaichenchai/VinDr_YOLOv8/
+                host: thermaltake
+                os: Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+                program: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/upload_files.py
+                python: CPython 3.12.5
+                root: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode
+                startedAt: "2025-07-04T06:04:38.322093Z"
+                writerId: u139jc8lennvxiwnbek7obt6862oaf4v
+        m: []
+        python_version: 3.12.5
+        t:
+            "3":
+                - 2
+                - 3
+                - 14
+            "4": 3.12.5
+            "5": 0.21.0
+            "12": 0.21.0
+            "13": linux-x86_64

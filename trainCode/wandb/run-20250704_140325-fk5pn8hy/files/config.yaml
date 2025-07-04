@@ -1,0 +1,50 @@
+_wandb:
+    value:
+        cli_version: 0.21.0
+        e:
+            q6lyrr86d6wqwvqb8kehvp5ncdkmdsvh:
+                codePath: trainCode/upload_files.py
+                codePathLocal: upload_files.py
+                cpu_count: 10
+                cpu_count_logical: 20
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "4030801100800"
+                        used: "598904152064"
+                email: englishorc65@gmail.com
+                executable: /home/kai/miniconda3/envs/yolov8/bin/python3
+                git:
+                    commit: 19ff7a4175345c42cfeac182fb8759dcd6d462ed
+                    remote: https://github.com/kaichenchai/VinDr_YOLOv8/
+                gpu: NVIDIA GeForce RTX 2080 Ti
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-ec77f7d1-9195-cb06-cabd-ba2d5eca3904
+                    - architecture: Turing
+                      cudaCores: 4352
+                      memoryTotal: "11811160064"
+                      name: NVIDIA GeForce RTX 2080 Ti
+                      uuid: GPU-102d16f1-d21c-a28e-496a-d10efddea836
+                host: thermaltake
+                memory:
+                    total: "67075633152"
+                os: Linux-6.5.0-28-generic-x86_64-with-glibc2.35
+                program: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/upload_files.py
+                python: CPython 3.12.5
+                root: /mnt/data/kai/VinDr_YOLOv8_experiments/trainCode
+                startedAt: "2025-07-04T06:03:25.625482Z"
+                writerId: q6lyrr86d6wqwvqb8kehvp5ncdkmdsvh
+        m: []
+        python_version: 3.12.5
+        t:
+            "3":
+                - 14
+            "4": 3.12.5
+            "5": 0.21.0
+            "12": 0.21.0
+            "13": linux-x86_64

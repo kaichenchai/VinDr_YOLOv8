@@ -1,0 +1,17 @@
+{
+  "os":  "Linux-6.5.0-28-generic-x86_64-with-glibc2.35",
+  "python":  "CPython 3.12.5",
+  "startedAt":  "2025-07-04T06:04:38.322093Z",
+  "program":  "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode/upload_files.py",
+  "codePath":  "trainCode/upload_files.py",
+  "codePathLocal":  "upload_files.py",
+  "git":  {
+    "remote":  "https://github.com/kaichenchai/VinDr_YOLOv8/",
+    "commit":  "19ff7a4175345c42cfeac182fb8759dcd6d462ed"
+  },
+  "email":  "englishorc65@gmail.com",
+  "root":  "/mnt/data/kai/VinDr_YOLOv8_experiments/trainCode",
+  "host":  "thermaltake",
+  "executable":  "/home/kai/miniconda3/envs/yolov8/bin/python3",
+  "writerId":  "u139jc8lennvxiwnbek7obt6862oaf4v"
+}
