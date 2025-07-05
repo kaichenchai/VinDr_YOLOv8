@@ -5,3 +5,5 @@ datasets/
 **/VinDr_YOLOv8
 
 **/.venv
+
+nohup.out
