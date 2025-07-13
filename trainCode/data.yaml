@@ -1,4 +1,4 @@
-path: /mnt/data/kai/VinDr_Subsets/cardiomegaly_subset/YOLO_format/1024_padding_histEQ
+path: /mnt/data/kai/VinDr_Subsets/cardiomegaly_subset/YOLO_format/1024_padding_CLAHE
 train: images/train
 val: images/val
 
