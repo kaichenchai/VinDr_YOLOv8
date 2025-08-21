@@ -3,16 +3,17 @@ from ultralytics import YOLO, settings
 settings.update({"wandb":True})
 
 dataset = "data.yaml"
-model = YOLO(f"yolo11n.pt")
+model = YOLO(f"yolo11m-obb.pt")
 
-model.train(project = "cardiomegaly_explainability",
+model.train(project = "pneumothorax-obb",
             data = dataset,
-            name = "05072025_yolov11n_histEQ",
-            batch = 16,
+            name = "210825_yolov11m_512",
+            batch = 32,
             epochs = 500,
-            imgsz = 1024,
+            imgsz = 512,
             plots = True,
             device=[0],
             optimizer="Adam",
-            patience=100)
+            patience=100,
+            seed=12048)
 

@@ -1,7 +1,7 @@
-path: /mnt/data/kai/VinDr_Subsets/cardiomegaly_subset/YOLO_format/1024_padding_histEQ
+path: /home/kai/mnt/siim-acr-pneumothorax/yolo_format/siim_acr_512_yolo
 train: images/train
 val: images/val
+test: images/test
 
 names:
-  0: heart
-  1: thoracic_cavity
+  0: pneumothorax
